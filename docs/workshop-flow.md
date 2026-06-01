@@ -28,7 +28,8 @@ Open and close happen together; the split is only for the build.
 
 - [ ] **Claude Code in VS Code**, signed in, for every attendee
 - [ ] **Jira connected (MCP)** — attendees on their own; a facilitator's Jira for the demo
-- [ ] **Training repo** ready — [download .zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) or clone [github.com/tracedwax/ac-training-repo](https://github.com/tracedwax/ac-training-repo); ships with `grill-me`, the [example tickets](example-tickets.md), the Test Case Standard, and a `scratch/` folder
+- [ ] **Product workspace** — the training repo: [download .zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) or clone [github.com/tracedwax/ac-training-repo](https://github.com/tracedwax/ac-training-repo); ships with `grill-me`, [example tickets](example-tickets.md), the Test Case Standard, and `scratch/`
+- [ ] **QA workspace** — clone `qa-shared-tools` (`git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"`); make a branch; ensure `grill-me` + `write-test-cases` skills are in it (copy from the training repo if not). QA saves on a branch, **never `main`**
 - [ ] Each attendee has **one real ticket** + whatever notes/transcript they have about it
 - [ ] [Example tickets](example-tickets.md) open, to paste as "good examples"
 

@@ -31,14 +31,22 @@ You'll work against your **own real Jira ticket** and push to it live — so you
 
 > **Pushing to Jira is always confirm-first:** you review what Claude wrote **as a local draft**, then say go. Nothing reaches your ticket without you approving it.
 
-## Get the training repo
+## Get your workspace
 
-The hands-on workspace is an open repo: **[github.com/tracedwax/ac-training-repo](https://github.com/tracedwax/ac-training-repo)**. Pick one:
+**Product** — use the open training repo **[github.com/tracedwax/ac-training-repo](https://github.com/tracedwax/ac-training-repo)**:
 
-- **Download the zip:** [ac-training-repo.zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) → unzip → **open the folder in VS Code** → start Claude there.
-- **Clone it:** `git clone https://github.com/tracedwax/ac-training-repo.git`
+- **Download the zip:** [ac-training-repo.zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) → unzip → open in VS Code, or
+- **Clone:** `git clone https://github.com/tracedwax/ac-training-repo.git`
 
-It already includes the [example tickets](example-tickets.md), our **Test Case Standard** plus a real example (`QUAL-4510`), the `grill-me` skill, starter skills, an empty `CLAUDE.md`, and a `scratch/` folder for your drafts. It's yours to write to — unlike the read-only product repos.
+It ships with the [example tickets](example-tickets.md), our **Test Case Standard** + a real example (`QUAL-4510`), the `grill-me` skill, starter skills, an empty `CLAUDE.md`, and a `scratch/` folder.
+
+**QA** — work in your real shared repo, **`qa-shared-tools`**:
+
+```
+git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"
+```
+
+Open it in VS Code and **make a branch for the session** (`git checkout -b qa-training/<your-name>`) so nothing touches `main`. If the repo doesn't already have the `grill-me` and `write-test-cases` skills under `.claude/skills/`, copy them from the training repo above (and keep that repo handy for the Test Case Standard and the `QUAL-4510` example).
 
 ## If your requirements live in SharePoint
 

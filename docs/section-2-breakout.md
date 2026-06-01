@@ -51,10 +51,16 @@ No AC to sharpen, or finished early? Build the **rest of the story** — problem
 
 ## 🟩 QA room — full test cases from a story's AC
 
-**You leave with:** test-case drafts that follow our **Test Case Standard** — Action / Data / Expected Result, definitive language, mapped to the AC — covering happy path, edges, and regression, saved as markdown.
+**You leave with:** test-case drafts that follow our **Test Case Standard** — Action / Data / Expected Result, definitive language, mapped to the AC — covering happy path, edges, and regression, saved into `qa-shared-tools` on your branch.
 
 ### Step 1 — Open your workspace
-Open the **training repo's `scratch/` folder** in VS Code and start Claude there.
+Clone QA's shared repo and open it in VS Code:
+```
+git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"
+```
+Make a branch so nothing touches `main`: `git checkout -b qa-training/<your-name>`. Start Claude here.
+
+> Make sure the `grill-me` and `write-test-cases` skills are available — if they're not already under this repo's `.claude/skills/`, copy them in from the [training repo](https://github.com/tracedwax/ac-training-repo), and keep that repo open for the Test Case Standard and the `QUAL-4510` example.
 
 ### Step 2 — Pull the story and its AC
 > *"Pull ticket [KEY] from Jira. Read its acceptance criteria and testing notes. Don't write anything yet — list what you'd need to verify it."*
@@ -62,8 +68,7 @@ Open the **training repo's `scratch/` folder** in VS Code and start Claude there
 (No Jira yet? Paste the ticket text instead.)
 
 ### Step 3 — Point Claude at our real format
-Both ship in the training repo:
-> *"Follow our Test Case Standard in `standards/test-case-standard.md`. Here's a real example to match: `examples/QUAL-4510.md`. And see how AC maps to tests in `examples/PUR-6243.md`."*
+> *"Follow our Test Case Standard — use the copy in this `qa-shared-tools` repo if it's here, otherwise `standards/test-case-standard.md` from the training repo. Match the format of a real test case like `QUAL-4510`, and see how AC maps to tests in `PUR-6243`."*
 
 The standard is the bar: Summary as `{Feature} | {what's tested}`, a *"Validates that… so that…"* description, **Action / Data / Expected Result** steps, definitive language (never "should"/"could"), preconditions in the first step, a negative path inline, postconditions last.
 
@@ -79,9 +84,11 @@ Read it as the QA who has to run it — **and against the standard.** What's unt
 
 Write the result to `scratch/[TICKET]-test-cases.md`.
 
-### Step 6 — Save it (and optionally push)
-The markdown file in `scratch/` is your deliverable. **Stretch:** add it to the ticket:
-> *"Post these test cases as a comment on ticket [KEY] in Jira. Show me the text first."* — review, then **"go."**
+### Step 6 — Save it (then optionally share)
+Save your test cases into `qa-shared-tools` on **your branch** and commit:
+> *"Save these as `[TICKET]-test-cases.md` in a working folder and commit them to my branch. Show me the diff first."* — review, then **"go."**
+
+Push the **branch** if you want to share it (open a PR later) — **never push to `main`** of the shared repo. **Stretch:** also add them to the Jira ticket: *"Post these as a comment on [KEY] — show me the text first."*
 
 ---
 
