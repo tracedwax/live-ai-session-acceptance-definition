@@ -1,0 +1,8 @@
+* [Home](/)
+* [Prerequisites](prerequisites.md)
+* [Workshop Flow](workshop-flow.md)
+* [Module 1 — Prompting, Context & Your First CLAUDE.md](module-1-prompting-context.md)
+* [Module 2 — Skills: Find, Vet, Demo](module-2-skills.md)
+* [Module 3 — Build a Skill for Your OpenSpec Work](module-3-build-a-skill.md)
+* [Module 4 — Debrief & Homework](module-4-debrief.md)
+* [Office Hours (optional)](office-hours.md)
