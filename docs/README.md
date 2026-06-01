@@ -18,7 +18,7 @@ By the time we close, you have:
 2. **A captured preference** — the one thing you kept insisting on, written into a `CLAUDE.md` so Claude does it that way next time without being told.
 3. *(Stretch)* **Your own skill** — a saved, one-command way to write AC or test cases the way you like them.
 
-If you only get #1, the hour paid for itself.
+If you only get #1, that's the hour well spent.
 
 ## Who's in the room
 
