@@ -1,65 +1,54 @@
-# AI Training — Class 1: Skills
+# Writing Acceptance Criteria with Claude — Product & QA
 
-Welcome. This is the first live session of this engagement. By the end of the hour you'll have written your own agent skill and run it against real OpenSpec work.
+Welcome. This is a hands-on hour. You bring one real ticket you actually need to write; you leave with its acceptance criteria sharpened with Claude, pushed to Jira, and a saved way of doing it again that works *the way you work*.
 
-> **Tooling:** We standardize on **Claude Code**. Cursor's fine too, and you don't have to give it up. For most people the best setup is Claude Code running alongside Cursor, so you get Cursor's editor and Claude's agent in one workflow. Examples here use Claude Code.
+> **Tooling:** We work in **Claude Code inside VS Code** — the same sidebar you've been setting up in the drop-ins. No terminal required.
 
-## What this class is
+## What this hour is
 
-Four weeks, role-mixed (Dev, QA, Product), all hands-on with your own codebase and backlog. We are not here to watch slides. You bring real work; you leave each session with something that runs.
+One job, done well: **take a story you own and get its acceptance criteria from rough to ready, live, with Claude.** Product and QA each work their own real ticket, in their own room, on the part of the job that's actually theirs.
 
-Class 1 covers the foundation: how to prompt and feed context well, how to make the agent remember your preferences with a CLAUDE.md, and how to build, vet, and run **skills** so the agent does your repetitive work the way you would.
+This is not a slides session, and it's not about learning a tool for its own sake. It's your normal work — writing a story, writing test cases — done with a teammate that reads instantly and forgets nothing.
 
-> **Never used OpenSpec? Still fine.** OpenSpec is a workflow for writing a spec before the agent builds, so it doesn't drift. One-line version: a change has a proposal, spec deltas, and tasks the agent works through. Skim [spec-before-you-ship](https://spec-before-you-ship.vercel.app/) if it's new to you; Module 3 gives you a 30-second path either way.
+## The win you leave with
 
-## How each session runs
+By the time we close, you have:
+
+1. **A real ticket, sharper than it started** — acceptance criteria a developer could build from and QA could verify, pushed to your Jira ticket.
+2. **A captured preference** — the one thing you kept insisting on, written into a `CLAUDE.md` so Claude does it that way next time without being told.
+3. *(Stretch)* **Your own skill** — a saved, one-command way to write AC or test cases the way you like them.
+
+If you only get #1, the hour paid for itself.
+
+## Who's in the room
+
+| Room | You write | Best fit |
+|------|-----------|----------|
+| **Product** | A user story with testable acceptance criteria | PM / UX |
+| **QA** | Full test-case drafts from a story's acceptance criteria | QA |
+
+We start together, split into the two rooms for the build, and come back together to compare and ask anything.
+
+## The North Star
+
+This hour is one step toward where this whole engagement is going:
+
+- **Mindset** — treat Claude as a teammate: know its limits, its costs, its strengths.
+- **Workflow** — a Jira-integrated way of working that runs end to end.
+- **Safety** — a clear sense of what's safe to push and what needs your eyes first.
+- **Cadence** — a repeatable routine you actually keep using after we leave.
+
+## How the hour runs
 
 | | |
 |---|---|
-| **Core** | 60 minutes. Core session content (Modules 1 through 4). |
-| **Office hours** | Optional 30 minutes after. Deeper questions, skill iteration, stuck-point help. Stay if you can; you won't miss anything required if you can't. |
-| **Format** | Short framing, then you build. Module 3 runs in breakout rooms. |
+| **Section 1 — Orient** | All together. Level-set, a quick demo of the whole loop, connect Jira. |
+| **Section 2 — Breakout** | Two rooms. You do the work on your own ticket. |
+| **Section 3 — Q&A** | All together. Show one result, ask anything. |
+| **Closing** | Quick retro + rate the hour. |
 
-## What we're asking of you across the four weeks
+Facilitators: see the [Run of Show](workshop-flow.md) and [Facilitator Guide](facilitator-guide.md).
 
-This part is about the engagement, not the live hour. Most of it happens between sessions.
+## Before you arrive
 
-- **Code AI-first.** Default to working with the agent; fall back to manual only when the agent can't finish the job.
-- **Cameras on** during live sessions, so we're working with people not avatars.
-- **Share wins and failures** in the channel. Fire-and-forget is fine; a failure is more useful to everyone than silence.
-- **Complete the weekly survey.** It directly shapes what we cover next.
-
-## The arc
-
-Class 1 is Week 0. Here is where it sits and where we go next. **Schedule and topics are subject to change** as we learn what the team needs — expect adjustments week to week.
-
-| Week | Topic | Required | Optional |
-|------|-------|----------|----------|
-| **0 — Tue (this session)** | **Introduction: prompt & context engineering; Agents/CLAUDE.md; prompts; skills** | **Dev, QA, Product** | |
-| 1a — Tue | Intent engineering; plan modes; spec-driven development | Dev, QA, Product | |
-| 1b — Thu | Rapid prototyping; prototype-driven specification and development | Product | Dev, QA |
-| 2a — Tue | Evals: testing and verified spec-driven development | Dev, QA | Product |
-| 2b — Thu | Intent engineering for Product strategy; self-updating product artifacts, roadmaps, backlogs | Product | Dev, QA |
-| 3 — Tue | Subagents; long-running agents; metaharnesses; dark factories | Dev, QA | Product |
-| 4 — Tue | Retrospective | Dev, QA, Product | |
-
-The direction is the **Dark Factory**: requirements go in, mergeable PRs come out. You do not have to reach a fully dark factory for the move toward it to change how you work.
-
-## Where you are now: the six levels
-
-Place yourself honestly on this ladder. It's Dan Shapiro's framing, popularized by Nate B. Jones ([source](https://simonwillison.net/2026/Jan/28/the-five-levels/)), and Shapiro modeled it on the [driving automation levels NHTSA uses](https://www.nhtsa.gov/vehicle-safety/automated-vehicles-safety). Same six rungs, different vehicle.
-
-| Level | Self-driving (NHTSA) | AI coding agent (Shapiro) |
-|:---:|---|---|
-| 0 | Momentary Driver Assistance | **Spicy autocomplete** — you type, AI finishes the line. You approve every character. |
-| 1 | Driver Assistance | **The coding intern** — discrete chores: a test, a docstring. |
-| 2 | Additional Assistance | **The junior developer** — whole boring tasks handed off. Most "AI-native" devs are stuck here. |
-| 3 | Conditional Automation | **The developer** — the agent does the work; you review and steer it like a teammate. |
-| 4 | High Automation | **The engineering team** — you write and argue specs, then check back when the tests finish. |
-| 5 | Full Automation | **The dark software factory** — no one reviews AI code line by line. Humans design the system that proves it. |
-
-Most teams sit at level 2 and assume that's the ceiling. This engagement is about moving up deliberately. Today's work, CLAUDE.md and skills, is how you stop re-explaining yourself to the agent and start operating at level 3 and above.
-
-## Before Class 1
-
-Do the [Prerequisites](prerequisites.md). Only one item is required: Claude installed and telling you a joke. The rest help but won't block you.
+Do the [Prerequisites](prerequisites.md). One thing is required — Claude working in VS Code — and one thing makes the hour real: **bring a ticket you actually need to write.**

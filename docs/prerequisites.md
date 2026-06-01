@@ -1,81 +1,53 @@
 # Prerequisites
 
-One thing is required. Everything else makes the session better but will not block you.
+Two things make this hour work. The first is required. The second is what turns "I watched a demo" into "I sharpened my own ticket."
 
-## Required: Claude Code installed and talking
+## Required: Claude Code working in VS Code
 
-You need Claude Code working and able to hold one turn of conversation.
+You need Claude Code running in the VS Code sidebar and able to answer you.
 
-1. Install it: [code.claude.com/docs/quickstart](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code). If you already have the Claude desktop app, Claude Code came with it.
-2. Open it and ask:
+1. Install **VS Code**, add the **Claude Code extension**, and **sign in**. (The drop-in coaching this week walks through this if you're not there yet.)
+2. Open the Claude panel and ask:
 
-> *"Tell me a joke."*
+   > *"Tell me a joke."*
 
-If you get a joke back, you are ready. That is the whole bar.
+If you get a joke back, you're ready. That's the whole bar.
 
-## Recommended pre-work
+## Required for the real win: bring one ticket
 
-Two free tracks. Claude Code 101 takes up to 3 hours. OpenSpec takes up to 2. Skip sections you already know cold.
+Bring **one real ticket you actually need to write or sharpen.** Not a perfect one — a rough one. The rougher the better; that's the point.
 
-### Track 1 — Claude Code 101 (up to 3 hrs)
+- **Product:** a story whose acceptance criteria are vague, missing, or "I'll know it when I see it."
+- **QA:** a story with acceptance criteria you'd need to turn into test cases.
 
-Anthropic's free course. Covers install through hooks: explore → plan → code → commit, context management, CLAUDE.md, subagents, MCP.
+Bring whatever you have *about* it, too: the requirements you were handed, a Slack thread, your own notes, even a **recording or transcript** of a conversation about it. Messy is fine. We feed all of it to Claude.
 
-→ [anthropic.skilljar.com/claude-code-101](https://anthropic.skilljar.com/claude-code-101)
+## Connect Jira (we'll confirm in the room)
 
-### Track 2 — OpenSpec (up to 2 hrs)
+You'll work against your **own real Jira ticket** and push to it live — so your Jira connection (the "MCP") needs to be on.
 
-- **Spec Before You Ship** — free 8-lesson tutorial on writing specs before handing work to AI: [spec-before-you-ship.vercel.app](https://spec-before-you-ship.vercel.app/)
-- **Video explainer** — down-to-earth walkthrough of the OpenSpec workflow: [youtube](https://www.youtube.com/watch?v=B7VPMKW5tnk)
-- Skim the basics:
-  - [Workflow diagram](https://github.com/Fission-AI/OpenSpec/discussions/294#discussion-9121778)
-  - [DeepWiki overview](https://deepwiki.com/Fission-AI/OpenSpec/1-overview)
+- If a drop-in already connected your Jira, you're set.
+- If not, **come to a drop-in before June 2** or flag it in the channel. A facilitator can also drive the demo on their own Jira so you still see the whole loop.
 
-### How much should I do?
+> **Pushing to Jira is always confirm-first:** you review what Claude wrote **as a local draft**, then say go. Nothing reaches your ticket without you approving it.
 
-- **Devs / QA:** do both tracks. Skip what you already know cold.
-- **Product / PMs:** do both. Skip anything particularly devvy you don't need (you don't have to be fluent in hooks or MCP to follow the class).
+## Get the training repo (one download)
 
-The class moves fast. Doing this prep is the difference between "I followed along" and "I built something useful."
+We hand out a small **training repo** as a zip. **Download it from the link in the channel**, unzip it, and **open the folder in VS Code** — then start Claude there. (A drop-in can help if the link gives you trouble.)
 
-## Optional but recommended
+It already includes the [example tickets](example-tickets.md), our **Test Case Standard** plus a real example (`QUAL-4510`), the `grill-me` skill, starter skills, an empty `CLAUDE.md`, and a `scratch/` folder for your drafts. It's yours to write to — unlike the read-only product repos.
 
-These let you work on something real in Module 3 instead of a toy. Skip any you can't get to.
+## If your requirements live in SharePoint
 
-### An OpenSpec feature to work against
-
-Have one OpenSpec change in mind, complete or in progress. Your own repo is best. If you don't have one, the `local-orchestrator` repo works as a default, or you can have the agent define a small arbitrary feature on the spot. You only need to pick one; creating one is optional.
-
-### A sample or two of your past work
-
-Bring something that shows how you work, so a skill can learn your style: a user story, a code file, an architecture decision record, a manual-QA script, an AQA script. Any one is enough.
-
-### Tessl (optional, no account needed)
-
-We use Tessl to review skills. It runs locally and needs no login. Installing ahead of time is encouraged but optional; we have a fallback if you don't have it.
-
-Ask your agent:
-
-> *"Run `npx -y @tessl/cli --help` and tell me if it works."*
-
-If it prints help, you're set. If not, no problem, bring it up in office hours.
-
-## Verify
-
-Ask your agent one check:
-
-> *"Confirm Claude Code is working by telling me a joke, then tell me whether `npx -y @tessl/cli --help` runs."*
-
-The joke is the only must-pass. The rest is bonus.
+Some of you keep requirements in **SharePoint**. If that connection is set up by June 2 we'll use it; if not, just **paste the text in**. Don't block on it.
 
 ## Troubleshooting
 
 | Problem | Fix |
 |---------|-----|
-| Claude Code not found in terminal | Reinstall from the [quickstart](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code); the desktop app bundles it |
-| Windows blocks the install | Note it and flag it in the channel; your training coordinator handles licensing and permissions |
-| `npx -y @tessl/cli` errors | Optional tool. Skip it; we use the agent-eval fallback in Module 2 and 3 |
-| No OpenSpec feature ready | Use `local-orchestrator`, or have the agent define a small feature live |
-| Not sure your setup is right | Paste the error into Claude Code and ask it to walk you through the fix |
+| Claude panel not showing in VS Code | Reinstall the extension; bring it to a drop-in if it persists |
+| Not signed in / auth loop | Flag in the channel — the coordinator handles licensing |
+| Jira not connected | Come to a drop-in; worst case, follow on a facilitator's Jira |
+| No ticket to bring | Tell your facilitator — we have [example tickets](example-tickets.md) you can work instead |
 
-> **Stuck?** Post in the channel before the session. We'd rather fix it now than spend live minutes on setup.
+> **Stuck?** Post in the channel before the session. We'd rather fix setup now than spend live minutes on it.

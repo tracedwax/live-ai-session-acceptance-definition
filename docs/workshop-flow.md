@@ -1,52 +1,63 @@
-# Workshop Flow
+# Run of Show
 
-A 60-minute core, then optional office hours. The core has a hard stop. Everything you must leave with — including your homework for the week — is handed out inside it.
+> **The page to keep open while you facilitate.** Everything you need to move through the hour is here or one click away. 60-minute hour, Product + QA, two rooms.
 
-## Core (60 minutes)
+## At a glance
 
-| Block | Time | Who | What |
-|-------|------|-----|------|
-| Welcome & level-set | 0:00–0:05 | Everyone | What this class is, how it runs, place yourself on the six levels |
-| Module 1 | 0:05–0:17 | Everyone | Prompting & context fundamentals, then write your first CLAUDE.md |
-| Module 2 | 0:17–0:30 | Everyone | What skills are, where to get them, how to vet them; live demo + Tessl |
-| Module 3 | 0:30–0:52 | Breakout rooms | Build a skill for your OpenSpec work, review it with Tessl |
-| Module 4 | 0:52–1:00 | Everyone | Debrief, next session, homework |
+| Section | Time | Who | What |
+|---------|------|-----|------|
+| **1 — Orient** | 0:00–0:17 | Everyone | Level-set, the gentle frame, connect Jira, watch the whole loop once (live demo) |
+| **2 — Breakout** | 0:17–0:47 | Two rooms | You run the loop on your own ticket. Product → story + AC. QA → test cases. |
+| **3 — Q&A** | 0:47–0:55 | Everyone | Two people show a result, open questions |
+| **Closing** | 0:55–1:00 | Everyone | Plus/delta retro + rate the hour |
 
-> **Buffer:** Module 3 carries the slack. If the room is fast, push stretch goals. If slow, the facilitator cuts the in-room debrief and moves iteration to office hours.
+> **Buffer:** Section 2 carries the slack. If a room is flying, push the capture finale (CLAUDE.md + a saved skill). If it's slow, cut the finale and protect the one win: **sharp AC pushed to the ticket.**
 
-## Housekeeping (read at the top of every session)
+## Facilitators & rooms
 
-- **Speak up any time.** If you have a question, ask it the moment it comes up. Don't wait for a "questions?" prompt.
-- **Raise your hand** (literally on camera, or with the Zoom/Teams hand) or just unmute. Both work, neither will offend anyone.
-- **Drop it in chat** if a quick question doesn't need airtime. A facilitator will catch it and answer or pull it into the room.
-- The best time to surface a question is **when it lands**, not at the end. Mid-build questions are usually the most useful ones.
+| Room | Facilitator | Output |
+|------|-------------|--------|
+| **Product** | Facilitator A (Trace) | A user story with testable Given/When/Then AC, pushed to their own ticket |
+| **QA** | Facilitator B (Zach / Chris) | Full test-case drafts from a story's AC, saved as markdown |
 
-## Office hours (optional, 30 minutes)
+Open and close happen together; the split is only for the build.
 
-| Time | What |
-|------|------|
-| 1:00–1:30 | Iterate your skill, deeper Q&A, unstick anyone who didn't finish, longer discussion of what people built |
+## What's in the room (check before you start)
 
-Not everyone will stay, and that is fine. Nothing here is required. See [Office Hours](office-hours.md).
+- [ ] **Claude Code in VS Code**, signed in, for every attendee
+- [ ] **Jira connected (MCP)** — attendees on their own; a facilitator's Jira for the demo
+- [ ] **Training repo** cloned — ships with the `grill-me` skill, the [example tickets](example-tickets.md), and a `scratch/` folder to work in
+- [ ] Each attendee has **one real ticket** + whatever notes/transcript they have about it
+- [ ] [Example tickets](example-tickets.md) open, to paste as "good examples"
 
-## How the blocks connect
+## The spine (the whole hour in one line)
 
-Each module hands the next one a concrete thing.
+> **Dump everything you have + a good example → ask for a first pass → read it cold → if it's not good, `grill me` and build it step by step → review the draft → push to the ticket → capture the way you like it.**
 
-- **Module 1 → Module 3.** The CLAUDE.md you write is your starter pack: one or two preferences the agent now always loads. In Module 3, the skill you build is the same idea scaled up and packaged so anyone on the team can use it. Module 3 calls back to that file by name.
-- **Module 2 → Module 3.** The Module 2 demo is the playbook for what you do yourself: sharp description, agent interviews you before it writes, review the result, run Tessl. Module 3 is you running that exact loop in your own breakout room.
-- **Module 3 → Module 4.** The skill you built is what gets debriefed. The homework is using it on real work this week and reporting back, which makes Class 1a material.
+Everything below is that loop, twice: once on screen in Section 1, once on your own ticket in Section 2.
 
-Underneath all of it: stop re-explaining yourself to the agent. CLAUDE.md is the small version. A skill is the packaged version. Watching one get built first is so Module 3 isn't you improvising blind.
+## The pages
 
-## Close: rate the hour
+1. [Section 1 — Orient](section-1-orient.md) — level-set + the live demo
+2. [Section 2 — Breakout](section-2-breakout.md) — **the activity, with every prompt** (Product + QA)
+3. [Section 3 — Q&A](section-3-qa.md) — show & ask
+4. [Closing](closing.md) — retro + the Return-on-Time kata
+5. [Facilitator Guide](facilitator-guide.md) — cues, risks, recovery, two-room coordination
+6. [Example Tickets](example-tickets.md) — the four real tickets and what each is for
 
-In the last minute of the core, drop a 0–4 in chat for your return on time invested:
+## Dry-run focus
 
-- **0** — Waste of time.
-- **1** — Some value, not worth the hour.
-- **2** — Worth showing up, nothing more.
-- **3** — Good use of time; you learned something or moved work forward.
-- **4** — You'd have missed something important if you weren't here.
+Running this as a dry run? Don't try to time all 60. Do this:
 
-Then one line: **what would move your score up by one full point?**
+1. Section 1 demo end-to-end **once** — find where the Jira connect or the push feels shaky.
+2. **One full Product loop** on a real ticket, including **confirm-to-push**. That's the riskiest live moment; rehearse it.
+3. The **capture finale** once (CLAUDE.md + save a skill), so you can demo it confidently.
+4. Closing kata, just to time it.
+
+Note every spot where you'd reach for a prompt you didn't have — those go in the [prompt sections](section-2-breakout.md).
+
+## Housekeeping (read at the top)
+
+- **Speak up the moment a question lands.** Mid-build questions are the useful ones.
+- **Nothing reaches Jira without you confirming it.** You review a local draft first, every time.
+- **Messy input is the point.** Half-formed notes feed the agent better than a polished paragraph.
