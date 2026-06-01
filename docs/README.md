@@ -52,3 +52,5 @@ Facilitators: see the [Run of Show](workshop-flow.md) and [Facilitator Guide](fa
 ## Before you arrive
 
 Do the [Prerequisites](prerequisites.md). One thing is required — Claude working in VS Code — and one thing makes the hour real: **bring a ticket you actually need to write.**
+
+The hands-on workspace is the **[AC training repo](https://github.com/tracedwax/ac-training-repo)** — [download the .zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip), unzip, open in VS Code, and start Claude there.

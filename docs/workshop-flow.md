@@ -13,6 +13,8 @@
 
 > **Buffer:** Section 2 carries the slack. If a room is flying, push the capture finale (CLAUDE.md + a saved skill). If it's slow, cut the finale and protect the one win: **sharp AC pushed to the ticket.**
 
+> **Materials:** the hands-on **AC training repo** — [download .zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) · [browse / clone](https://github.com/tracedwax/ac-training-repo).
+
 ## Facilitators & rooms
 
 | Room | Facilitator | Output |
@@ -26,7 +28,7 @@ Open and close happen together; the split is only for the build.
 
 - [ ] **Claude Code in VS Code**, signed in, for every attendee
 - [ ] **Jira connected (MCP)** — attendees on their own; a facilitator's Jira for the demo
-- [ ] **Training repo** cloned — ships with the `grill-me` skill, the [example tickets](example-tickets.md), and a `scratch/` folder to work in
+- [ ] **Training repo** ready — [download .zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) or clone [github.com/tracedwax/ac-training-repo](https://github.com/tracedwax/ac-training-repo); ships with `grill-me`, the [example tickets](example-tickets.md), the Test Case Standard, and a `scratch/` folder
 - [ ] Each attendee has **one real ticket** + whatever notes/transcript they have about it
 - [ ] [Example tickets](example-tickets.md) open, to paste as "good examples"
 

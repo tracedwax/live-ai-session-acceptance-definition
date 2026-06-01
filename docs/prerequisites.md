@@ -31,9 +31,12 @@ You'll work against your **own real Jira ticket** and push to it live — so you
 
 > **Pushing to Jira is always confirm-first:** you review what Claude wrote **as a local draft**, then say go. Nothing reaches your ticket without you approving it.
 
-## Get the training repo (one download)
+## Get the training repo
 
-We hand out a small **training repo** as a zip. **Download it from the link in the channel**, unzip it, and **open the folder in VS Code** — then start Claude there. (A drop-in can help if the link gives you trouble.)
+The hands-on workspace is an open repo: **[github.com/tracedwax/ac-training-repo](https://github.com/tracedwax/ac-training-repo)**. Pick one:
+
+- **Download the zip:** [ac-training-repo.zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) → unzip → **open the folder in VS Code** → start Claude there.
+- **Clone it:** `git clone https://github.com/tracedwax/ac-training-repo.git`
 
 It already includes the [example tickets](example-tickets.md), our **Test Case Standard** plus a real example (`QUAL-4510`), the `grill-me` skill, starter skills, an empty `CLAUDE.md`, and a `scratch/` folder for your drafts. It's yours to write to — unlike the read-only product repos.
 
