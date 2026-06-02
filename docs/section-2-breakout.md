@@ -13,6 +13,14 @@ Pick your room. **Each step tells you what to accomplish and why, not what to ty
 
 > **Everyone hands on keys, please. :)** This part isn't TV. Do it on your own ticket as we go and keep your screen shared, we're all working at once, not watching one person.
 
+> **Reviewing what Claude writes.** Everything lands as markdown you can open and read (Product: under `openspec/changes/<your-feature>/`, one file per piece, proposal then each spec; QA: your test-case files on your branch). In VS Code, open a file and press **Cmd+Shift+V** (Windows **Ctrl+Shift+V**) for a formatted preview, or **Cmd+K** then **V** for a side-by-side preview.
+
+<details>
+<summary>Prefer it in a Word doc?</summary>
+
+Open the VS Code markdown preview, select all in the **preview** pane (Cmd+A), copy, and paste into Word; it arrives as formatted headings and lists. Copy from the preview, not the raw source: raw markdown pasted into Word will not render. (Or ask Claude to format it for Word.)
+</details>
+
 ---
 
 ## Product room: break a feature into value-bearing Jira tickets
@@ -25,7 +33,7 @@ The move you're learning is **divide and conquer**: explore the *whole* feature,
 
 > **The one rule for tickets:** every Story must deliver **business value** a user can observe. Split by *behavior* (`guest-checkout`, `order-confirmation-email`), **never** by technical layer ("frontend ticket", "backend ticket"). A layer has no standalone value.
 
-> **Each step below follows Erin's doc**, [The OpenSpec Process](openspec-process.md): Step 1 [Exploration](openspec-process.md?id=1-exploration-pm-owns), Step 2 [How to break it up](openspec-process.md?id=how-to-break-a-project-into-openspec-units), Step 3 [Proposal](openspec-process.md?id=2-proposal-pm-owns), Step 4 [Writing WHEN/THEN specs](openspec-process.md?id=writing-whenthen-specs), Step 5 [Jira + OpenSpec](openspec-process.md?id=how-jira-and-openspec-connect-step-by-step).
+> **Each step below is one step of Erin's doc**, [The OpenSpec Process](openspec-process.md). The matching section is linked under each step heading, so you can read the method for that step as you go.
 
 ### Step 0: Open your own folder and get set up
 Open Claude in **the folder you already work in**. You're not creating a new repo, you just need a home for the work and an autosave trail. You write **no application code** here, only the proposal, the specs, and the tickets.
@@ -45,6 +53,8 @@ Turn on autosave (say it once):
 > If install stalls, flag it in the channel, a facilitator gets you unblocked. Don't lose live minutes to setup.
 
 ### Step 1: Explore the *whole* feature (don't spec yet)
+*Erin's doc: [Exploration](openspec-process.md?id=1-exploration-pm-owns).*
+
 This is thinking time, not writing time. Get **everything** you know in front of the agent, the ticket, your notes, the refinement call, a Slack thread, even a screenshot of a Figma frame, and ask it to map the landscape: every distinct behavior the feature touches, and what's still ambiguous. **Don't rush to a spec.** The full picture is the goal.
 
 Then let **`grill me`** find the holes. You don't need to know the right questions, that's its job. Every question it asks is a decision that belongs in the ticket; every answer is something a developer would otherwise have guessed. **This is how the ticket gets complete before any code is written.** Answer what you can; flag what needs a stakeholder.
@@ -60,6 +70,8 @@ then run the `grill-me` skill on the feature and answer its questions.
 </details>
 
 ### Step 2: Find the seams (divide it up)
+*Erin's doc: [How to break a project into units](openspec-process.md?id=how-to-break-a-project-into-openspec-units) and the [sizing reference](openspec-process.md?id=sizing-reference).*
+
 Get the agent to **split the feature into independently shippable behaviors**: one bucket per behavior, each named like a behavior (not a component or a layer), each with a one-line "Why" (its business value). Then check the sizing out loud against the [sizing reference](openspec-process.md#sizing-reference): one sentence each, 2-4 behaviors, testable on its own.
 
 **Bad split:** "frontend" / "backend." **Good split:** the guest-checkout example, *guest cart → confirmation email → post-purchase account prompt.* If a bucket needs "and also" to describe, it's two buckets.
@@ -71,6 +83,8 @@ Get the agent to **split the feature into independently shippable behaviors**: o
 </details>
 
 ### Step 3: Write the proposal, then stop and review it
+*Erin's doc: [Proposal](openspec-process.md?id=2-proposal-pm-owns) and [Writing the Proposal](openspec-process.md?id=writing-the-proposal).*
+
 Don't generate everything at once. Have the agent draft **just the proposal**, the *what* and *why* (`proposal.md`, which becomes your **Epic**), and nothing else yet. Then **read it cold** as the developer who has to build it: is the scope right? is the "Why" true? anything missing, or sneaked in that you didn't intend? Grill it, and **ask the room**, your facilitator and the people next to you are part of this review. Don't move on until the proposal is right; a wrong proposal makes wrong specs.
 
 <details>
@@ -82,6 +96,8 @@ then run the `grill-me` skill on the proposal and answer its questions.
 </details>
 
 ### Step 4: Write the specs one behavior at a time
+*Erin's doc: [Spec](openspec-process.md?id=3-spec-pm-qa-collaborate-and-dev-too) and [Writing WHEN/THEN specs](openspec-process.md?id=writing-whenthen-specs).*
+
 Now go behavior by behavior. For **each** one, have the agent write **that single spec** (`specs/<behavior>/spec.md`) as testable WHEN/THEN scenarios, then **review it before you touch the next**: where would a developer still guess? what are the unhappy paths? If a spec runs past **6-8 scenarios**, it's doing too much, split it (that's one more Story). One artifact, one review, then the next. Use the `grill-me` skill and the people in the room here.
 
 > Leave `design.md` to the developer. When the specs are solid, you can ask Claude to break them into a short **tasks** list, those become your sub-tasks in Step 5.
@@ -95,6 +111,8 @@ then run the `grill-me` skill on the spec and answer its questions.
 </details>
 
 ### Step 5: Create the Jira tickets, in reviewable chunks
+*Erin's doc: [How Jira and OpenSpec connect](openspec-process.md?id=how-jira-and-openspec-connect-step-by-step).*
+
 Build the tree in **your own Jira project**, and here too go in pieces you can check: create the **Epic** from the proposal, then **one Story per spec** (its "Why" is the description), then a few **sub-tasks** per Story from the tasks list. **Make the agent show the plan first**, then read it: does every Story name a behavior and a value? Any "layer" Stories hiding? Only then say go, and spot-check in Jira after.
 
 > **The review *is* the safety:** you see the tree before anything is created, and a wrong ticket is one click to delete.
