@@ -25,6 +25,8 @@ The move you're learning is **divide and conquer**: explore the *whole* feature,
 
 > **The one rule for tickets:** every Story must deliver **business value** a user can observe. Split by *behavior* (`guest-checkout`, `order-confirmation-email`), **never** by technical layer ("frontend ticket", "backend ticket"). A layer has no standalone value.
 
+> **Each step below follows Erin's doc**, [The OpenSpec Process](openspec-process.md): Step 1 [Exploration](openspec-process.md?id=1-exploration-pm-owns), Step 2 [How to break it up](openspec-process.md?id=how-to-break-a-project-into-openspec-units), Step 3 [Proposal](openspec-process.md?id=2-proposal-pm-owns), Step 4 [Writing WHEN/THEN specs](openspec-process.md?id=writing-whenthen-specs), Step 5 [Jira + OpenSpec](openspec-process.md?id=how-jira-and-openspec-connect-step-by-step).
+
 ### Step 0: Open your own folder and get set up
 Open Claude in **the folder you already work in**. You're not creating a new repo, you just need a home for the work and an autosave trail. You write **no application code** here, only the proposal, the specs, and the tickets.
 
