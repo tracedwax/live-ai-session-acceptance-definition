@@ -2,7 +2,17 @@
 
 > **Time: ~20 min. All together.** Ends with everyone having watched the whole loop once: a real feature, split into Jira tickets.
 
-The only goal here is that when we split into rooms, nobody is staring at a blank screen wondering what to type. They've seen it.
+## Rules of engagement (read these first)
+
+This is a hands-on working session, not a webinar. Three things we're asking of everyone:
+
+1. **Follow along live.** Do the work on your own machine as we go. You learn this by typing it, not by watching someone else.
+2. **Share your screen while you work.** We all keep our screens shared in the breakout so facilitators can spot where you're stuck and help fast. Rough and messy is expected; nobody's being graded.
+3. **Speak up the moment a question lands.** Mid-build questions are the useful ones, ask them out loud or in chat right away.
+
+Two safety habits we'll repeat all session: **nothing is created in Jira until you read the plan and say go**, and **messy input is the point** (half-formed notes feed the agent better than a polished paragraph).
+
+The only goal of this first part is that when we split into rooms, nobody is staring at a blank screen wondering what to type. They've seen it.
 
 ## Welcome & level-set (5 min)
 

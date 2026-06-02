@@ -1,8 +1,10 @@
 # Specs & Test Cases with Claude: Product & QA
 
-Welcome. This is a hands-on session. You bring one real **feature** you actually need to work; you leave with it broken into **Jira tickets a developer can build from**: **Product splits the feature into value-bearing tickets, QA writes the test cases**: and a saved way of doing it again that works *the way you work*.
+Welcome. This is a hands-on session. You bring one real **feature** you actually need to work; you leave with it broken into **Jira tickets a developer can build from** (Product splits the feature into value-bearing tickets, QA writes the test cases), plus a saved way of doing it again that works *the way you work*.
 
-> **Tooling:** We work in **Claude Code inside VS Code**: the same sidebar you've been setting up in the drop-ins. No terminal required.
+> **Tooling:** We work in **Claude Code inside VS Code**, the same sidebar you've been setting up in the drop-ins. No terminal required.
+
+> **Heads-up, it's hands-on:** we'll ask everyone to **follow along and share their screen** while they work. Come ready to do the work live, not just watch. Full [rules of engagement](section-1-orient.md) are at the start of the session.
 
 ## What this session is
 
