@@ -13,7 +13,7 @@
 
 > **Buffer:** Section 2 carries the slack. If a room is flying, push the capture finale (CLAUDE.md + a saved skill). If it's slow, cut the finale and protect the one win — Product: **a value-bearing ticket tree (Epic + Stories) in their own Jira project;** QA: **sharp test cases saved.**
 
-> **Materials:** **Product** works in their **own folder** — needs **OpenSpec** (Claude installs live) and the [`openspec-process.md`](openspec-process.md) page dropped in; tickets go into the attendee's **own Jira project** (a sandbox/Playground is an optional backup). **QA** works in **`qa-shared-tools`** (ADO), which holds the standard, the `QUAL-4510` example, and the skills.
+> **Materials:** **Product** works in their **own folder** — needs **OpenSpec** (Claude installs live) and the [`openspec-process.md`](openspec-process.md) page dropped in; tickets go into the attendee's **own Jira project** (the **Mocking Project** `MP` is a shared sandbox backup — https://aspenware.atlassian.net/jira/software/projects/MP/boards). **QA** works in **`qa-shared-tools`** (ADO), which holds the standard, the `QUAL-4510` example, and the skills.
 
 ## Facilitators & rooms
 
@@ -28,7 +28,7 @@ Open and close happen together; the split is only for the build.
 
 - [ ] **Claude Code in VS Code**, signed in, for every attendee
 - [ ] **Jira connected (MCP)** — attendees on their own; a facilitator's Jira for the demo
-- [ ] **Jira write access** — each attendee can create issues in **their own project** (that's where tickets land); a sandbox/Playground project is an optional backup
+- [ ] **Jira write access** — each attendee can create issues in **their own project** (that's where tickets land); the **Mocking Project** (`MP`) is the shared sandbox backup
 - [ ] **Product workspace** — attendee's **own folder** open with Claude (no new repo), **OpenSpec installed** (`npm i -g @fission-ai/openspec`), and [`openspec-process.md`](openspec-process.md) added (copy it from the process page, or Claude adds it)
 - [ ] **QA workspace** — clone `qa-shared-tools` (`git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"`); make a branch. The standard, `QUAL-4510` example, and skills live there. **ADO access may need granting — confirm early.** QA saves on a branch, **never `main`**
 - [ ] Each attendee has **one real feature** (Product) or **one story** (QA) + whatever notes/transcript they have

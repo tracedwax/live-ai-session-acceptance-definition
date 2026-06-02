@@ -51,7 +51,7 @@ When it comes back, name it (gently):
    > **The point:** *"I didn't have to know the right questions. `grill me` found the holes for me — and every answer is a decision that belongs in the ticket. That's how the ticket gets complete before anyone writes code."*
 3. **Split by behavior.** *"Now split this into independently shippable behaviors — one bucket each, named like a behavior, with a one-line 'Why' (the business value)."* Say out loud: *"Not a frontend ticket and a backend ticket — those have no value on their own. We split by what a user can see work."*
 4. **Propose.** `/opsx:propose` — Claude writes the proposal + a spec per behavior. Point at the files appearing under `openspec/changes/`.
-5. **Create the tickets, confirm-first.** *"In my Jira project, create an Epic from the proposal and a Story per behavior with its 'Why', plus sub-tasks. Show me the tree first."* — read it, then say **"go."** (Demoing on a real backlog? Use a sandbox/Playground project, or print the tree as markdown.)
+5. **Create the tickets, confirm-first.** *"In my Jira project, create an Epic from the proposal and a Story per behavior with its 'Why', plus sub-tasks. Show me the tree first."* — read it, then say **"go."** (Demoing on a real backlog? Use the **Mocking Project** (`MP`) sandbox, or print the tree as markdown.)
 
 Then close the demo with the honest line:
 

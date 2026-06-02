@@ -87,7 +87,7 @@ Now turn the artifacts into a real ticket tree in **your own Jira project** — 
 
 Read the plan. Check the obvious things: **does every Story name a behavior and a value?** Are there any "layer" Stories hiding (split those)? Then say **"go,"** and let it create them. Spot-check one Story in Jira when it's done.
 
-> **The review *is* the safety** — you read the whole tree before anything is created, and a wrong ticket is one click to delete. **Want a no-risk run first?** Have Claude **print the full tree as markdown** so you can eyeball it, or point it at a **sandbox/Playground project** as a backup if you've got one.
+> **The review *is* the safety** — you read the whole tree before anything is created, and a wrong ticket is one click to delete. **Want a no-risk run first?** Have Claude **print the full tree as markdown** so you can eyeball it, or create it in the **[Mocking Project (`MP`)](https://aspenware.atlassian.net/jira/software/projects/MP/boards)** — a shared sandbox where you can make throwaway tickets and do no harm.
 
 ### Step 6 — *(Stretch)* go deeper
 Finished early? Push the specs further — negative paths, rollback behavior, the non-obvious edge cases — and fold them in. Or note the **dependency order** between your Stories (which must ship before which) in each Story's description, so sprint planning is already done.
