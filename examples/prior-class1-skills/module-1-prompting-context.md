@@ -1,4 +1,4 @@
-# Module 1 — Prompting, Context & Your First CLAUDE.md
+# Module 1: Prompting, Context & Your First CLAUDE.md
 
 > **Time:** ~12 minutes. Ends with a file you keep.
 
@@ -11,7 +11,7 @@ Most bad agent output is a context problem, not a model problem. This module fix
 - A feel for why a vague prompt and a precise one produce very different output
 - A working `CLAUDE.md` in a folder you use, with one or two of your real preferences in it
 
-## Step 1 — Run a vague prompt, then a precise one
+## Step 1: Run a vague prompt, then a precise one
 
 Pick one small task. Ask for it the lazy way first, then ask for the same thing with intent and a done condition. Use whichever pair fits your role:
 
@@ -35,9 +35,9 @@ Pick one small task. Ask for it the lazy way first, then ask for the same thing 
 
 The second one works because it states the **outcome** and the **done condition**, not just the verb. Anthropic's prompting guidance says the same thing: be explicit, give the model the success criteria ([prompting docs](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)).
 
-> What you just did is prompt craft for one task. The bigger discipline — making the **business's** purpose **machine-readable and machine-actionable** so an autonomous system stays on the rails — is what Nate B. Jones calls **intent engineering**, and it lives with Product and leadership, not in a single prompt. Goals, values, tradeoffs, decision boundaries written down clearly enough that the agent can't accidentally wander into "disastrous." We pick that up in Class 1a. For now, see his [Klarna piece](https://natesnewsletter.substack.com/p/klarna-saved-60-million-and-broke) or the [4-skills framework](https://www.youtube.com/watch?v=BpibZSMGtdY) on YouTube.
+> What you just did is prompt craft for one task. The bigger discipline, making the **business's** purpose **machine-readable and machine-actionable** so an autonomous system stays on the rails, is what Nate B. Jones calls **intent engineering**, and it lives with Product and leadership, not in a single prompt. Goals, values, tradeoffs, decision boundaries written down clearly enough that the agent can't accidentally wander into "disastrous." We pick that up in Class 1a. For now, see his [Klarna piece](https://natesnewsletter.substack.com/p/klarna-saved-60-million-and-broke) or the [4-skills framework](https://www.youtube.com/watch?v=BpibZSMGtdY) on YouTube.
 
-## Step 2 — Context rot is real
+## Step 2: Context rot is real
 
 The agent does not get smarter as the conversation gets longer. It gets noisier. Stale instructions, dead ends, and three abandoned attempts all sit in the window competing with what you actually want. This is **context rot**: quality degrades as the context fills with low-signal material.
 
@@ -49,7 +49,7 @@ Practical rules:
 
 That "somewhere persistent" is the next step.
 
-## Step 3 — Hands-on: write your first CLAUDE.md
+## Step 3: Hands-on: write your first CLAUDE.md
 
 `CLAUDE.md` is a file Claude Code reads automatically at the start of every session in that folder. It is the smallest possible way to stop repeating yourself. Whatever you just had to correct the agent on, put it here once.
 

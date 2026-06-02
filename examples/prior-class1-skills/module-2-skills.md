@@ -1,4 +1,4 @@
-# Module 2 — Skills: Find, Vet, Demo
+# Module 2: Skills: Find, Vet, Demo
 
 > **Time:** ~13 minutes.
 
@@ -15,7 +15,7 @@ A skill is a directory the agent loads when its description matches what you're 
 ```markdown
 ---
 name: commit-message
-description: Craft Git commit messages following Chris Beams' seven rules — imperative subject, 50-char limit, body explains why not how. Includes JIRA ID detection from branch names.
+description: Craft Git commit messages following Chris Beams' seven rules, imperative subject, 50-char limit, body explains why not how. Includes JIRA ID detection from branch names.
 ---
 
 # Craft Git Commit Messages (Chris Beams style)
@@ -37,7 +37,7 @@ Source: *How to Write a Git Commit Message* by Chris Beams (https://cbea.ms/git-
 > "If applied, this commit will … <subject>"
 ```
 
-That heritage is worth noticing: Chris Beams codified the commit-message guidance in the [subsurface README](https://github.com/torvalds/subsurface/blob/a48494d2fbed58c751e9b7e8fbff88582f9b2d02/README#L88-L115) — widely attributed to Linus Torvalds, who founded the project — about why focused, atomic commits matter. The actual SKILL.md on GitHub is longer (it adds JIRA detection, validation, and a step-by-step workflow Claude follows), but everything important about *what a skill is* fits in the lines above.
+That heritage is worth noticing: Chris Beams codified the commit-message guidance in the [subsurface README](https://github.com/torvalds/subsurface/blob/a48494d2fbed58c751e9b7e8fbff88582f9b2d02/README#L88-L115), widely attributed to Linus Torvalds, who founded the project, about why focused, atomic commits matter. The actual SKILL.md on GitHub is longer (it adds JIRA detection, validation, and a step-by-step workflow Claude follows), but everything important about *what a skill is* fits in the lines above.
 
 Optional folders sit next to `SKILL.md`: `scripts/` for code the skill runs, `references/` for docs it can pull in, `assets/` for templates, `evals/` for tests. The description is the most important line. It's how the agent decides to use the skill at all. Make it specific and a little pushy.
 
@@ -49,15 +49,15 @@ Think of tiers as **who reuses the skill**, not how fancy it is.
 
 | Tier | Reused by | Example |
 |------|-----------|---------|
-| 1 — Org | Everyone in the company | Your company brand voice; the way official partner-facing language has to read |
-| 2 — Team | Just your team (e.g. QA, Product, or a specific team) | The AQA-test generator we're building in Module 3 |
-| 3 — Personal | Just you | Your commit-message formatter; your standup-update phrasing |
+| 1, Org | Everyone in the company | Your company brand voice; the way official partner-facing language has to read |
+| 2, Team | Just your team (e.g. QA, Product, or a specific team) | The AQA-test generator we're building in Module 3 |
+| 3, Personal | Just you | Your commit-message formatter; your standup-update phrasing |
 
 Most of what you build today is Tier 2: encode how your best QA, dev, or PM already works so everyone gets it.
 
 ## Where skills come from
 
-- [Anthropic's skills repo](https://github.com/anthropics/skills) — first-party examples (slack-gif-creator, brand-guidelines, skill-creator, etc.)
+- [Anthropic's skills repo](https://github.com/anthropics/skills), first-party examples (slack-gif-creator, brand-guidelines, skill-creator, etc.)
 - [Tessl registry](https://tessl.io/registry)
 - GitHub search for `SKILL.md`
 - [agentskills.io](https://agentskills.io) for reference and patterns

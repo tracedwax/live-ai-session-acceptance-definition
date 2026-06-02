@@ -30,7 +30,7 @@ The curriculum SHALL be a Docsify site located in `docs/`, deployable via GitHub
 
 #### Scenario: Navigation order
 - **WHEN** the sidebar renders
-- **THEN** entries appear as Home → Prerequisites → Workshop Flow → Module 1–4 → Office Hours → Facilitator Guide
+- **THEN** entries appear as Home → Prerequisites → Workshop Flow → Module 1-4 → Office Hours → Facilitator Guide
 
 ### Requirement: Locally render-verifiable
 The site SHALL render correctly when served locally before any deployment.

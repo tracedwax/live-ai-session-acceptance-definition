@@ -5,10 +5,10 @@ description: Draft testable acceptance criteria for a user story from rough note
 
 # Write Acceptance Criteria
 
-> **This is a starter.** It works as-is, but the point of the session is to make it *yours* — edit the steps and rules below to match how you decided you like acceptance criteria written.
+> **This is a starter.** It works as-is, but the point of the session is to make it *yours*, edit the steps and rules below to match how you decided you like acceptance criteria written.
 
 ## When to use this
-The user wants acceptance criteria for a story — writing from scratch or sharpening vague ones.
+The user wants acceptance criteria for a story, writing from scratch or sharpening vague ones.
 
 ## How to do it
 
@@ -21,5 +21,5 @@ The user wants acceptance criteria for a story — writing from scratch or sharp
 
 ## Rules
 - Every criterion must be testable by someone who can't ask the author a question.
-- No UI wording or implementation detail in the criteria — outcomes only.
-- If the user keeps correcting you the same way, that's a preference — offer to add it to `CLAUDE.md`.
+- No UI wording or implementation detail in the criteria, outcomes only.
+- If the user keeps correcting you the same way, that's a preference, offer to add it to `CLAUDE.md`.

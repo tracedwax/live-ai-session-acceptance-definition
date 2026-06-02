@@ -26,18 +26,18 @@ The session SHALL be designed for a 60-minute mandatory core followed by an opti
 - **THEN** it states installation is optional but encouraged and requires no login/account
 
 ### Requirement: Module 1 builds a CLAUDE.md from live preferences
-The first hands-on activity SHALL have participants create a 1–2 line `CLAUDE.md` capturing preferences surfaced during the session.
+The first hands-on activity SHALL have participants create a 1-2 line `CLAUDE.md` capturing preferences surfaced during the session.
 
 #### Scenario: CLAUDE.md hands-on present in Module 1
 - **WHEN** `module-1-prompting-context.md` is read
-- **THEN** it includes a hands-on step to create a CLAUDE.md with 1–2 preferences, after prompting/context fundamentals (context rot, intent engineering)
+- **THEN** it includes a hands-on step to create a CLAUDE.md with 1-2 preferences, after prompting/context fundamentals (context rot, intent engineering)
 
 #### Scenario: Skill module calls back to CLAUDE.md
 - **WHEN** `module-3-build-a-skill.md` is read
 - **THEN** it explicitly frames a skill as the packaged version of the Module 1 CLAUDE.md
 
 ### Requirement: Four-room breakout skill build against OpenSpec work
-`module-3-build-a-skill.md` SHALL define four breakout rooms — manual-QA-script, AQA-test (Bryce-facilitated), estimate-with-dev-input, artifact-chunker — with Jira/Confluence-poster as a stretch, building a skill against a real or arbitrary OpenSpec feature.
+`module-3-build-a-skill.md` SHALL define four breakout rooms, manual-QA-script, AQA-test (Bryce-facilitated), estimate-with-dev-input, artifact-chunker, with Jira/Confluence-poster as a stretch, building a skill against a real or arbitrary OpenSpec feature.
 
 #### Scenario: Rooms and stretch
 - **WHEN** the breakout section is read
@@ -70,7 +70,7 @@ Every CLI command and cited fact in the curriculum SHALL be verified against the
 
 #### Scenario: Five Levels named canonically
 - **WHEN** the Five Levels appear
-- **THEN** level numbers and names match Dan Shapiro's source (0 spicy autocomplete … 5 dark software factory), with the 0–5 span explained
+- **THEN** level numbers and names match Dan Shapiro's source (0 spicy autocomplete … 5 dark software factory), with the 0-5 span explained
 
 #### Scenario: SKILL.md shown in real format
 - **WHEN** a SKILL.md example is shown
@@ -88,9 +88,9 @@ The curriculum SHALL give a workable path to participants who have no code repo 
 - **THEN** a 30-second path and a one-line "what OpenSpec is" with a link are provided, plus an explicit clone step for the default repo
 
 ### Requirement: Step-to-page mapping preserved
-The 11-point session spec SHALL map onto the pages as: prerequisites (0); README/home (1); module-1 (2 + CLAUDE.md); module-2 (3–4, incl. Bryce demo + Tessl); module-3 (5–8); module-4 (brief 9 + 11); office-hours (extended 9 + 10); workshop-flow + facilitator-guide (timing, pre-assignments, cut paths).
+The 11-point session spec SHALL map onto the pages as: prerequisites (0); README/home (1); module-1 (2 + CLAUDE.md); module-2 (3-4, incl. Bryce demo + Tessl); module-3 (5-8); module-4 (brief 9 + 11); office-hours (extended 9 + 10); workshop-flow + facilitator-guide (timing, pre-assignments, cut paths).
 
 #### Scenario: All 11 spec points are covered
 - **WHEN** the full page set is reviewed against the original 11-point spec
-- **THEN** every point 0–11 is present in exactly the mapped page(s) with no point dropped
+- **THEN** every point 0-11 is present in exactly the mapped page(s) with no point dropped
 

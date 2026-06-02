@@ -17,16 +17,16 @@ If you get a joke back, you are ready. That is the whole bar.
 
 Two free tracks. Claude Code 101 takes up to 3 hours. OpenSpec takes up to 2. Skip sections you already know cold.
 
-### Track 1 — Claude Code 101 (up to 3 hrs)
+### Track 1: Claude Code 101 (up to 3 hrs)
 
 Anthropic's free course. Covers install through hooks: explore → plan → code → commit, context management, CLAUDE.md, subagents, MCP.
 
 → [anthropic.skilljar.com/claude-code-101](https://anthropic.skilljar.com/claude-code-101)
 
-### Track 2 — OpenSpec (up to 2 hrs)
+### Track 2: OpenSpec (up to 2 hrs)
 
-- **Spec Before You Ship** — free 8-lesson tutorial on writing specs before handing work to AI: [spec-before-you-ship.vercel.app](https://spec-before-you-ship.vercel.app/)
-- **Video explainer** — down-to-earth walkthrough of the OpenSpec workflow: [youtube](https://www.youtube.com/watch?v=B7VPMKW5tnk)
+- **Spec Before You Ship**: free 8-lesson tutorial on writing specs before handing work to AI: [spec-before-you-ship.vercel.app](https://spec-before-you-ship.vercel.app/)
+- **Video explainer**: down-to-earth walkthrough of the OpenSpec workflow: [youtube](https://www.youtube.com/watch?v=B7VPMKW5tnk)
 - Skim the basics:
   - [Workflow diagram](https://github.com/Fission-AI/OpenSpec/discussions/294#discussion-9121778)
   - [DeepWiki overview](https://deepwiki.com/Fission-AI/OpenSpec/1-overview)

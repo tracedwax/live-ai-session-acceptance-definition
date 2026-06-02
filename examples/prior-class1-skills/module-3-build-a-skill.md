@@ -1,23 +1,23 @@
-# Module 3 — Build a Skill for Your OpenSpec Work
+# Module 3: Build a Skill for Your OpenSpec Work
 
 > **Time:** ~22 minutes, in breakout rooms. This is the build. Everything before now was setup.
 
 In Module 1 you taught the agent one preference with a CLAUDE.md. Now you do it at scale: a packaged, reusable skill that does a real piece of your OpenSpec workflow the way your team's best person would.
 
-## Step 1 — Join your room
+## Step 1: Join your room
 
-Four rooms. Each one is role-shaped — the table shows where your role most naturally lands. Switching is allowed; tell your facilitator if you want to.
+Four rooms. Each one is role-shaped, the table shows where your role most naturally lands. Switching is allowed; tell your facilitator if you want to.
 
 | Room | Skill to build | Best fit for | Facilitator |
 |------|----------------|--------------|-------------|
 | 1 | **Manual QA script** generator from an OpenSpec change | Mostly QA | |
 | 2 | **AQA test** generator from an OpenSpec change | Devs interested in test automation | |
-| 3 | **Estimation helper** — size a new OpenSpec change by comparing it to past changes (and what they actually took), then fold in developer input | PMs, with a few devs in the room | |
+| 3 | **Estimation helper**: size a new OpenSpec change by comparing it to past changes (and what they actually took), then fold in developer input | PMs, with a few devs in the room | |
 | 4 | **OpenSpec work chunker**: take a too-big OpenSpec change and split it into smaller changes (or its tasks into commits a human can actually review) | Devs, especially anyone who reviews PRs | |
 
 > **Pre-assignments:** your facilitator will tell you which room you're in. Switching is allowed.
 
-> **Product folks:** Room 3 (Estimate) is yours. You bring the PM lens on what "good" looks like; the devs in the room bring the implementation reality. You don't need to write code; you drive **Step 3 — Decide what the skill must do** (the "what does good look like *here*" conversation). That's the part the agent can't do without you.
+> **Product folks:** Room 3 (Estimate) is yours. You bring the PM lens on what "good" looks like; the devs in the room bring the implementation reality. You don't need to write code; you drive **Step 3, Decide what the skill must do** (the "what does good look like *here*" conversation). That's the part the agent can't do without you.
 
 <details>
 <summary>Stretch: Confluence / Jira poster</summary>
@@ -26,7 +26,7 @@ If your room finishes early, build a skill that posts the generated artifact to 
 
 </details>
 
-## Step 2 — Pick the OpenSpec feature you'll run it against
+## Step 2: Pick the OpenSpec feature you'll run it against
 
 You need one feature for the skill to chew on. In order of preference:
 
@@ -51,7 +51,7 @@ That gives you a real OpenSpec change to point the skill at without learning Ope
 
 </details>
 
-## Step 3 — Decide what the skill must do, before you write it
+## Step 3: Decide what the skill must do, before you write it
 
 As a room, answer out loud first:
 
@@ -68,12 +68,12 @@ Just tell the agent:
 
 > *"Grill me on the skill we're about to build: [name and one-line description]. Walk down the decision tree one question at a time."*
 
-`grill-me` is built for exactly this — relentless one-at-a-time questions until the design is real instead of vibes.
+`grill-me` is built for exactly this, relentless one-at-a-time questions until the design is real instead of vibes.
 
 </details>
 
 <details>
-<summary>Without grill-me — meta-prompt fallback</summary>
+<summary>Without grill-me, meta-prompt fallback</summary>
 
 > *"We're building a skill that [generates X from an OpenSpec change]. Before you write anything, ask me one question at a time about how our team does this today, what inputs you'll have, and what 'good' looks like. Stop asking when you have enough to write a precise SKILL.md."*
 
@@ -81,7 +81,7 @@ The interview is what cuts slop. A skill that never asks produces generic output
 
 </details>
 
-## Step 4 — Write the skill
+## Step 4: Write the skill
 
 Description first, and make it specific. Two paths, pick one per room:
 
@@ -105,7 +105,7 @@ description: <one line: what it produces, from what input, and when to use it>
 
 Then run it against your Step 2 feature and read the output as the person who'd actually receive it. Would QA follow that script? Would a dev trust that estimate?
 
-## Step 5 — Review it with Tessl
+## Step 5: Review it with Tessl
 
 ```bash
 npx -y @tessl/cli skill review ./path-to-your-skill
@@ -128,7 +128,7 @@ That fails the review if the skill scores under 80, which is the "review against
 
 Iterate once on the weakest point. One tight loop beats five vague ones.
 
-## Step 6 — *(optional)* Save it where the team can use it
+## Step 6: *(optional)* Save it where the team can use it
 
 If the room finishes with time to spare, commit the skill to the shared location your facilitator names and add one line to the room's notes: what it does, and the one thing you'd improve next. If you don't get to this in the core, do it in office hours or this week.
 

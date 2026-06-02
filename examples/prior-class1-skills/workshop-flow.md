@@ -1,16 +1,16 @@
 # Workshop Flow
 
-A 60-minute core, then optional office hours. The core has a hard stop. Everything you must leave with — including your homework for the week — is handed out inside it.
+A 60-minute core, then optional office hours. The core has a hard stop. Everything you must leave with, including your homework for the week, is handed out inside it.
 
 ## Core (60 minutes)
 
 | Block | Time | Who | What |
 |-------|------|-----|------|
-| Welcome & level-set | 0:00–0:05 | Everyone | What this class is, how it runs, place yourself on the six levels |
-| Module 1 | 0:05–0:17 | Everyone | Prompting & context fundamentals, then write your first CLAUDE.md |
-| Module 2 | 0:17–0:30 | Everyone | What skills are, where to get them, how to vet them; live demo + Tessl |
-| Module 3 | 0:30–0:52 | Breakout rooms | Build a skill for your OpenSpec work, review it with Tessl |
-| Module 4 | 0:52–1:00 | Everyone | Debrief, next session, homework |
+| Welcome & level-set | 0:00-0:05 | Everyone | What this class is, how it runs, place yourself on the six levels |
+| Module 1 | 0:05-0:17 | Everyone | Prompting & context fundamentals, then write your first CLAUDE.md |
+| Module 2 | 0:17-0:30 | Everyone | What skills are, where to get them, how to vet them; live demo + Tessl |
+| Module 3 | 0:30-0:52 | Breakout rooms | Build a skill for your OpenSpec work, review it with Tessl |
+| Module 4 | 0:52-1:00 | Everyone | Debrief, next session, homework |
 
 > **Buffer:** Module 3 carries the slack. If the room is fast, push stretch goals. If slow, the facilitator cuts the in-room debrief and moves iteration to office hours.
 
@@ -25,7 +25,7 @@ A 60-minute core, then optional office hours. The core has a hard stop. Everythi
 
 | Time | What |
 |------|------|
-| 1:00–1:30 | Iterate your skill, deeper Q&A, unstick anyone who didn't finish, longer discussion of what people built |
+| 1:00-1:30 | Iterate your skill, deeper Q&A, unstick anyone who didn't finish, longer discussion of what people built |
 
 Not everyone will stay, and that is fine. Nothing here is required. See [Office Hours](office-hours.md).
 
@@ -41,12 +41,12 @@ Underneath all of it: stop re-explaining yourself to the agent. CLAUDE.md is the
 
 ## Close: rate the hour
 
-In the last minute of the core, drop a 0–4 in chat for your return on time invested:
+In the last minute of the core, drop a 0-4 in chat for your return on time invested:
 
-- **0** — Waste of time.
-- **1** — Some value, not worth the hour.
-- **2** — Worth showing up, nothing more.
-- **3** — Good use of time; you learned something or moved work forward.
-- **4** — You'd have missed something important if you weren't here.
+- **0**: Waste of time.
+- **1**: Some value, not worth the hour.
+- **2**: Worth showing up, nothing more.
+- **3**: Good use of time; you learned something or moved work forward.
+- **4**: You'd have missed something important if you weren't here.
 
 Then one line: **what would move your score up by one full point?**

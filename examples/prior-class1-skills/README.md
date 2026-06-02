@@ -1,4 +1,4 @@
-# AI Training — Class 1: Skills
+# AI Training: Class 1: Skills
 
 Welcome. This is the first live session of this engagement. By the end of the hour you'll have written your own agent skill and run it against real OpenSpec work.
 
@@ -31,17 +31,17 @@ This part is about the engagement, not the live hour. Most of it happens between
 
 ## The arc
 
-Class 1 is Week 0. Here is where it sits and where we go next. **Schedule and topics are subject to change** as we learn what the team needs — expect adjustments week to week.
+Class 1 is Week 0. Here is where it sits and where we go next. **Schedule and topics are subject to change** as we learn what the team needs, expect adjustments week to week.
 
 | Week | Topic | Required | Optional |
 |------|-------|----------|----------|
-| **0 — Tue (this session)** | **Introduction: prompt & context engineering; Agents/CLAUDE.md; prompts; skills** | **Dev, QA, Product** | |
-| 1a — Tue | Intent engineering; plan modes; spec-driven development | Dev, QA, Product | |
-| 1b — Thu | Rapid prototyping; prototype-driven specification and development | Product | Dev, QA |
-| 2a — Tue | Evals: testing and verified spec-driven development | Dev, QA | Product |
-| 2b — Thu | Intent engineering for Product strategy; self-updating product artifacts, roadmaps, backlogs | Product | Dev, QA |
-| 3 — Tue | Subagents; long-running agents; metaharnesses; dark factories | Dev, QA | Product |
-| 4 — Tue | Retrospective | Dev, QA, Product | |
+| **0, Tue (this session)** | **Introduction: prompt & context engineering; Agents/CLAUDE.md; prompts; skills** | **Dev, QA, Product** | |
+| 1a, Tue | Intent engineering; plan modes; spec-driven development | Dev, QA, Product | |
+| 1b, Thu | Rapid prototyping; prototype-driven specification and development | Product | Dev, QA |
+| 2a, Tue | Evals: testing and verified spec-driven development | Dev, QA | Product |
+| 2b, Thu | Intent engineering for Product strategy; self-updating product artifacts, roadmaps, backlogs | Product | Dev, QA |
+| 3, Tue | Subagents; long-running agents; metaharnesses; dark factories | Dev, QA | Product |
+| 4, Tue | Retrospective | Dev, QA, Product | |
 
 The direction is the **Dark Factory**: requirements go in, mergeable PRs come out. You do not have to reach a fully dark factory for the move toward it to change how you work.
 
@@ -51,12 +51,12 @@ Place yourself honestly on this ladder. It's Dan Shapiro's framing, popularized 
 
 | Level | Self-driving (NHTSA) | AI coding agent (Shapiro) |
 |:---:|---|---|
-| 0 | Momentary Driver Assistance | **Spicy autocomplete** — you type, AI finishes the line. You approve every character. |
-| 1 | Driver Assistance | **The coding intern** — discrete chores: a test, a docstring. |
-| 2 | Additional Assistance | **The junior developer** — whole boring tasks handed off. Most "AI-native" devs are stuck here. |
-| 3 | Conditional Automation | **The developer** — the agent does the work; you review and steer it like a teammate. |
-| 4 | High Automation | **The engineering team** — you write and argue specs, then check back when the tests finish. |
-| 5 | Full Automation | **The dark software factory** — no one reviews AI code line by line. Humans design the system that proves it. |
+| 0 | Momentary Driver Assistance | **Spicy autocomplete**: you type, AI finishes the line. You approve every character. |
+| 1 | Driver Assistance | **The coding intern**: discrete chores: a test, a docstring. |
+| 2 | Additional Assistance | **The junior developer**: whole boring tasks handed off. Most "AI-native" devs are stuck here. |
+| 3 | Conditional Automation | **The developer**: the agent does the work; you review and steer it like a teammate. |
+| 4 | High Automation | **The engineering team**: you write and argue specs, then check back when the tests finish. |
+| 5 | Full Automation | **The dark software factory**: no one reviews AI code line by line. Humans design the system that proves it. |
 
 Most teams sit at level 2 and assume that's the ceiling. This engagement is about moving up deliberately. Today's work, CLAUDE.md and skills, is how you stop re-explaining yourself to the agent and start operating at level 3 and above.
 

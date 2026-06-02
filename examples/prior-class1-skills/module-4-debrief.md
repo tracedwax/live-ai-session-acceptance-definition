@@ -1,4 +1,4 @@
-# Module 4 — Debrief & Homework
+# Module 4: Debrief & Homework
 
 > **Time:** ~8 minutes, in the core. The homework gets handed out here so everyone leaves with it, even if they don't stay for office hours.
 
@@ -28,14 +28,14 @@ Due before Class 1a (Week 1a, Tuesday):
 
 ## Next session: Class 1a
 
-**Intent engineering, plan modes, and spec-driven development.** Class 1 was about teaching the agent who you are (CLAUDE.md) and what you do repeatedly (skills). Class 1a goes one level up: **intent engineering**, in Nate B. Jones's sense — making the business's purpose machine-actionable so the agent stays on the rails. Goals, values, tradeoffs, decision boundaries written down well enough that the agent doesn't have to guess what "good" means here. Plan modes and spec-driven dev are the implementation surface on top of that. Bring the OpenSpec change from homework item 4; we work on real ones.
+**Intent engineering, plan modes, and spec-driven development.** Class 1 was about teaching the agent who you are (CLAUDE.md) and what you do repeatedly (skills). Class 1a goes one level up: **intent engineering**, in Nate B. Jones's sense, making the business's purpose machine-actionable so the agent stays on the rails. Goals, values, tradeoffs, decision boundaries written down well enough that the agent doesn't have to guess what "good" means here. Plan modes and spec-driven dev are the implementation surface on top of that. Bring the OpenSpec change from homework item 4; we work on real ones.
 
 ## Before you drop off
 
 Two quick drops in chat:
 
 1. **One thing from this session you want to do in your work this week.** Naming it out loud (or in chat) is the difference between "neat" and "I'll actually do that."
-2. Your **0–4 return-on-time rating** and the one thing that would move it up a point.
+2. Your **0-4 return-on-time rating** and the one thing that would move it up a point.
 
 Both directly shape Class 1a.
 
