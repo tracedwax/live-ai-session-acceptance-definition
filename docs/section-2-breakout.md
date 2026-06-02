@@ -100,14 +100,17 @@ Finished early? Push the specs further, negative paths, rollback behavior, the n
 
 Your team already writes test cases with Claude. So the win here isn't "can it draft one", it's **standardizing the bar and cleaning up what already exists.**
 
-### Step 1: Open the team's shared repo
-Your team's bar is the **[Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard)** (Katie's team's standard, in Confluence). You'll save your work in **`qa-shared-tools`** (Azure DevOps). Clone it and open it in VS Code:
-```
-git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"
-```
-Make a branch so nothing touches `main`: `git checkout -b qa-training/<your-name>` (or just tell Claude: *"make a branch called qa-training/your-name"*). Start Claude here.
+### Step 1: Open your clone of the shared repo
+You already have **`qa-shared-tools`** (Azure DevOps) cloned, that's where you'll save your work. Open it in VS Code, make a branch so nothing touches `main` (`git checkout -b qa-training/<your-name>`, or just ask Claude to make the branch), and start Claude there. Your bar is the team's **[Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard)** in Confluence.
 
-> **Access:** the QA team has shared access to this repo. **No access yet?** Paste the story + the standard into Claude and work in a local folder; share once access lands.
+<details>
+<summary>Need to clone it fresh? Click here</summary>
+
+```
+git clone "git@ssh.dev.azure.com:v3/awdenver/Aspenware Commerce/qa-shared-tools"
+```
+SSH (HTTPS is painful). New to SSH on Azure DevOps? Ask Claude to walk you through adding a key.
+</details>
 
 > **The `QUAL-4510` example and a starter `write-test-cases` skill** aren't assumed to be in your repo; your facilitator provides them from the session materials (see below). The standard itself is the Confluence page linked above.
 

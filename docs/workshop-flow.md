@@ -30,7 +30,7 @@ Open and close happen together; the split is only for the build.
 - [ ] **Jira connected (MCP)**: attendees on their own; a facilitator's Jira for the demo
 - [ ] **Jira write access**: each attendee can create issues in **their own project** (that's where tickets land); the **Mocking Project** (`MP`) is the shared sandbox backup
 - [ ] **Product workspace**: attendee's **own folder** open with Claude (no new repo), **OpenSpec installed** (`npm i -g @fission-ai/openspec`), and [`openspec-process.md`](openspec-process.md) added (copy it from the process page, or Claude adds it)
-- [ ] **QA workspace**: clone `qa-shared-tools` (`git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"`); make a branch (or ask Claude to). The [Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard) is in Confluence; the `QUAL-4510` example + starter skill come from the session materials. **ADO access may need granting, confirm early.** QA saves on a branch, **never `main`**
+- [ ] **QA workspace**: attendees already have `qa-shared-tools` cloned (SSH); they just make a branch (or ask Claude to). The [Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard) is in Confluence; the `QUAL-4510` example + starter skill come from the session materials. QA saves on a branch, **never `main`**
 - [ ] Each attendee has **one real feature** (Product) or **one story** (QA) + whatever notes/transcript they have
 - [ ] [Example tickets](example-tickets.md) open, to work or paste from
 

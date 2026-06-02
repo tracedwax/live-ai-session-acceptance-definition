@@ -39,15 +39,16 @@ You'll **create real tickets in your own Jira project** live, so your Jira conne
 
 > **About git:** the session uses tiny git commits as **autosave**: Claude makes them automatically after each step. *You don't need to know any git.* It's just an undo trail.
 
-**QA, work in your team's shared repo, `qa-shared-tools`** (Azure DevOps). Your bar is the team's **[Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard)** (in Confluence). The `QUAL-4510` example and a starter `write-test-cases` skill come from the session materials, not assumed to be in your repo.
+**QA, you already have `qa-shared-tools`** (Azure DevOps) cloned, that's your workspace. Open it in VS Code and **make a branch for the session** (`git checkout -b qa-training/<your-name>`, or just ask Claude to make the branch) so nothing touches `main`. Your bar is the team's **[Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard)** (in Confluence); the `QUAL-4510` example and a starter `write-test-cases` skill come from the session materials.
+
+<details>
+<summary>Need to clone it fresh? Click here</summary>
 
 ```
-git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"
+git clone "git@ssh.dev.azure.com:v3/awdenver/Aspenware Commerce/qa-shared-tools"
 ```
-
-Open it in VS Code and **make a branch for the session** (`git checkout -b qa-training/<your-name>`, or just ask Claude to make the branch) so nothing touches `main`.
-
-> **Access:** you may need your team to add your Aspenware account to this repo, flag it early if you can't clone. **No access by session time?** Paste the story + the standard into Claude and work in a local folder; share once access lands.
+SSH (HTTPS is painful). New to SSH on Azure DevOps? Ask Claude to walk you through adding a key.
+</details>
 
 ## If your requirements live in SharePoint
 
@@ -62,7 +63,7 @@ Some of you keep requirements in **SharePoint**. If that connection is set up by
 | Jira not connected | Come to a drop-in; worst case, follow on a facilitator's Jira |
 | OpenSpec not installed (Product) | Ask Claude to install it (`npm i -g @fission-ai/openspec`), or come to a drop-in |
 | Not sure which folder to use (Product) | Use whatever folder you already work in, no need to make a new one |
-| Can't clone `qa-shared-tools` (QA) | Your team needs to add your Aspenware account, flag early; until then, paste the story + standard and work locally |
+| `qa-shared-tools` not cloned (QA) | You should already have it; if not, use the SSH clone under "Get your workspace" or ask Claude. Worst case, paste the story + standard and work locally |
 | No feature to bring | Tell your facilitator, we have [example tickets](example-tickets.md) you can break up instead |
 
 > **Stuck?** Post in the channel before the session. We'd rather fix setup now than spend live minutes on it.
