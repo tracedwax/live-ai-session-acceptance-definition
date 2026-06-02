@@ -6,6 +6,7 @@ This is the workspace for the **Writing Acceptance Criteria with Claude** sessio
 
 | Path | What it's for |
 |------|---------------|
+| `openspec-process.md` | **The process Claude follows** to turn a feature into specs and Jira tickets. Tell Claude to read it; don't edit it. |
 | `examples/` | Four real Jira tickets as markdown. Paste from these as "good examples." See which is which below. |
 | `scratch/` | Where your drafts go. Save your AC / test cases here as `[TICKET].md`. |
 | `.claude/skills/grill-me/` | The `grill-me` skill — already installed for you. Just say *"grill me on this."* |

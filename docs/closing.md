@@ -1,6 +1,6 @@
 # Closing — Retro & the Return-on-Time Kata
 
-> **Time: ~5 min. All together.** Short and honest. This is also how we decide what the next hour looks like.
+> **Time: ~5 min. All together.** Short and honest. This is also how we decide what the next session looks like.
 
 ## Quick retro: plus / delta / question
 
@@ -32,7 +32,7 @@ That line is the most useful thing we get. It shapes the next session directly.
 
 ## Homework (one thing)
 
-Use it **once on a real ticket this week.** Not a demo — an actual story or test case you owe someone. The skill or CLAUDE.md you made today is meant to be used; using it once is how you find out if it's any good.
+Use it **once on a real feature this week.** Not a demo — an actual feature you need to break down (or a story's test cases you owe someone). The skill or CLAUDE.md you made today is meant to be used; using it once is how you find out if it's any good.
 
 > If what you built turns out to be the wrong shape, that's a finding. Bring *that*.
 
@@ -40,7 +40,7 @@ Use it **once on a real ticket this week.** Not a demo — an actual story or te
 
 Two quick drops in chat:
 
-1. **One thing from this hour you'll actually do this week.** Naming it is the difference between "neat" and "done."
+1. **One thing from this session you'll actually do this week.** Naming it is the difference between "neat" and "done."
 2. Your **0–4** and the one thing that would move it up a point.
 
-Thanks for the hour.
+Thanks for the session.

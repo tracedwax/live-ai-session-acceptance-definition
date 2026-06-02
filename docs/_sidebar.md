@@ -6,4 +6,5 @@
 * [Section 3 — Q&A](section-3-qa.md)
 * [Closing](closing.md)
 * [Facilitator Guide](facilitator-guide.md)
+* [The OpenSpec Process](openspec-process.md)
 * [Example Tickets](example-tickets.md)

@@ -1,6 +1,6 @@
 # Example Tickets
 
-Four real tickets, shipped with the training repo. **Product:** the rough ones (**CHK-3334**, **PUR-6336**) are the raw material to **explore and spec** — the kind of vague ticket OpenSpec is built for. **QA:** **PUR-6243** and **QUAL-4510** are the format to copy. The two clean examples (**PUR-6243**, **PPA-4978**) also show what "clear, testable behavior" looks like — handy to point at while you spec. Open this page in the room and work or paste from it.
+Four real tickets, shown here to work or paste from. **Product:** if you didn't bring a feature, the rough ones (**CHK-3334**, **PUR-6336**) are raw material to **explore, split, and turn into a ticket tree** — the kind of vague work OpenSpec is built for. (Don't have a feature big enough to split? Treat the whole **guest-checkout** example in [The OpenSpec Process](openspec-process.md) as your feature.) **QA:** **PUR-6243** and **QUAL-4510** are the format to copy. The two clean examples (**PUR-6243**, **PPA-4978**) also show what "clear, testable behavior" looks like.
 
 | Ticket | Type | Use it as | Why |
 |--------|------|-----------|-----|
@@ -9,7 +9,7 @@ Four real tickets, shipped with the training repo. **Product:** the rough ones (
 | **CHK-3334** | Story / Checkout | ✏️ **Sharpen this (Product)** | AC written as nested numbered requirements — real, but not testable as written. |
 | **PUR-6336** | Task / AI data | ✏️ **"Is this even AC?" (Product/QA)** | An implementation checklist masquerading as acceptance criteria. Great for "what's wrong with this?" |
 
-> **QA format:** the training repo ships our real **Test Case Standard** (`standards/test-case-standard.md`) and one complete example, **`examples/QUAL-4510.md`** — use those as the format. Other QUAL IDs referenced in these tickets (QUAL-5013, QUAL-2591…) are still placeholders we don't have bodies for.
+> **QA format:** your team's **Test Case Standard** and the complete **`QUAL-4510`** example both live in **`qa-shared-tools`** — use those as the format. Other QUAL IDs referenced in these tickets (QUAL-5013, QUAL-2591…) are still placeholders we don't have bodies for.
 
 ---
 
@@ -58,11 +58,11 @@ Its "Acceptance Criteria" is a nested implementation checklist — "add a sectio
 
 ## How to paste these in
 
-**Product (explore → spec):**
-> *"Let's use OpenSpec. Explore this ticket with me before we write anything — [paste CHK-3334, or your own]. What's ambiguous? What would a developer still have to guess? Ask me one thing at a time."*
+**Product (explore → split → tickets):**
+> *"Let's use OpenSpec. Explore this whole feature with me before we write or split anything — [paste CHK-3334, or your own]. What are all the distinct behaviors here? What would a developer still have to guess? Ask me one thing at a time."*
 
-then, when it's solid:
-> *"Now create an OpenSpec change — a proposal (what & why) and a spec of the behavior as testable scenarios."*
+then `grill me` to find the gaps, then:
+> *"Split this into independently shippable behaviors (one bucket each, named like a behavior, with a one-line 'Why'). Then create the OpenSpec change — a proposal plus a spec per behavior — and from it an Epic + a Story per behavior + sub-tasks in the Playground project. Show me the tree before creating anything."*
 
 **QA:**
-> *"Follow our Test Case Standard (`standards/test-case-standard.md`) and match the format of `examples/QUAL-4510.md`. Draft test cases for this story: Action / Data / Expected Result, definitive language, negative path inline."*
+> *"Follow our Test Case Standard in `qa-shared-tools` and match the format of the real `QUAL-4510` example there. Draft test cases for this story: Action / Data / Expected Result, definitive language, negative path inline. If test cases already exist, normalize them to the standard and flag duplicates instead."*

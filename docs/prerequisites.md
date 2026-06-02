@@ -1,6 +1,6 @@
 # Prerequisites
 
-Two things make this hour work. The first is required. The second is what turns "I watched a demo" into "I worked my own ticket."
+Two things make this session work. The first is required. The second is what turns "I watched a demo" into "I worked my own feature."
 
 ## Required: Claude Code working in VS Code
 
@@ -13,40 +13,41 @@ You need Claude Code running in the VS Code sidebar and able to answer you.
 
 If you get a joke back, you're ready. That's the whole bar.
 
-## Required for the real win: bring one ticket
+## Required for the real win: bring one feature
 
-Bring **one real ticket you actually need to work.** Not a perfect one — a rough one. The rougher the better; that's the point.
-
-- **Product:** a story you need to think through and spec — vague, missing details, "I'll know it when I see it."
-- **QA:** a story with acceptance criteria you'd need to turn into test cases.
+- **Product:** bring **one real feature** — something big enough to break into a few pieces. Not a single tidy ticket; a chunk of work you'd need to split into stories ("guest checkout," "bulk export," "the new onboarding"). Vague and rough is good — that's the point.
+- **QA:** bring **one story** with acceptance criteria you'd need to turn into test cases.
 
 Bring whatever you have *about* it, too: the requirements you were handed, a Slack thread, your own notes, even a **recording or transcript** of a conversation about it. **Got a Figma frame or a Claude prototype?** A screenshot is enough — drag it into the chat. Messy is fine. We feed all of it to Claude.
 
 ## Connect Jira (we'll confirm in the room)
 
-You'll work against your **own real Jira ticket** and push to it live — so your Jira connection (the "MCP") needs to be on.
+You'll **create real tickets** in a safe **Playground** Jira project live — so your Jira connection (the "MCP") needs to be on. *(Your facilitator gives you the Playground project key in the room — nothing you make there touches a real backlog.)*
 
 - If a drop-in already connected your Jira, you're set.
 - If not, **come to a drop-in before June 2** or flag it in the channel. A facilitator can also drive the demo on their own Jira so you still see the whole loop.
 
 > **Jira is configured once, globally.** You don't reconfigure it per project — just ask Claude to set the Atlassian (Jira) MCP up globally and follow its instructions.
 
-> **Pushing to Jira is always confirm-first:** you review what Claude wrote **as a local draft**, then say go. Nothing reaches your ticket without you approving it.
+> **Writing to Jira is always confirm-first:** Claude shows you the whole ticket tree **as a plan**, then you say go. Nothing gets created until you approve it.
 
 ## Get your workspace
 
-**Product — you don't need a code repo.** In the room, Claude sets one up for you: it creates a fresh folder and initializes **OpenSpec**, so you have somewhere to write your change. (It generates **no application code** — just the proposal and spec.)
+**Product — open Claude in your own folder.** Use the repo you already work in — **you're not creating a new one.** It's just a home for the work and an autosave trail. You write **no application code** — only the proposal, the specs, and the tickets.
 
-- Want a head start? Install OpenSpec before June 2: `npm i -g @fission-ai/openspec` — or just ask Claude to install it in the room. The drop-ins can help.
-- Optional starting point: the open **[training repo](https://github.com/tracedwax/ac-training-repo)** ([zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip) · `git clone https://github.com/tracedwax/ac-training-repo.git`) — it ships with the [example tickets](example-tickets.md), the `grill-me` skill, and a `scratch/` folder. Open it, then have Claude set OpenSpec up inside it.
+- Add two things to that folder: **OpenSpec** (`npm i -g @fission-ai/openspec`, or ask Claude to install it) and the **process doc**, [`openspec-process.md`](openspec-process.md). The process doc is a page on this site — copy it into your folder, or just ask Claude to add it. Don't fuss over this beforehand; Claude does it in [Step 0](section-2-breakout.md) of the breakout.
 
-**QA — work in your real shared repo, `qa-shared-tools`:**
+> **About git:** the session uses tiny git commits as **autosave** — Claude makes them automatically after each step. *You don't need to know any git.* It's just an undo trail.
+
+**QA — work in your team's shared repo, `qa-shared-tools`** (Azure DevOps). Everything you need lives there: the Test Case Standard, the real `QUAL-4510` example, and the skills.
 
 ```
 git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-tools"
 ```
 
-Open it in VS Code and **make a branch for the session** (`git checkout -b qa-training/<your-name>`) so nothing touches `main`. If the repo doesn't already have the `grill-me` and `write-test-cases` skills under `.claude/skills/`, copy them from the training repo above (and keep that repo handy for the Test Case Standard and the `QUAL-4510` example).
+Open it in VS Code and **make a branch for the session** (`git checkout -b qa-training/<your-name>`) so nothing touches `main`.
+
+> **Access:** you may need your team to add your Aspenware account to this repo — flag it early if you can't clone. **No access by session time?** Paste the story + the standard into Claude and work in a local folder; share once access lands.
 
 ## If your requirements live in SharePoint
 
@@ -60,6 +61,8 @@ Some of you keep requirements in **SharePoint**. If that connection is set up by
 | Not signed in / auth loop | Flag in the channel — the coordinator handles licensing |
 | Jira not connected | Come to a drop-in; worst case, follow on a facilitator's Jira |
 | OpenSpec not installed (Product) | Ask Claude to install it (`npm i -g @fission-ai/openspec`), or come to a drop-in |
-| No ticket to bring | Tell your facilitator — we have [example tickets](example-tickets.md) you can work instead |
+| Not sure which folder to use (Product) | Use whatever folder you already work in — no need to make a new one |
+| Can't clone `qa-shared-tools` (QA) | Your team needs to add your Aspenware account — flag early; until then, paste the story + standard and work locally |
+| No feature to bring | Tell your facilitator — we have [example tickets](example-tickets.md) you can break up instead |
 
 > **Stuck?** Post in the channel before the session. We'd rather fix setup now than spend live minutes on it.
