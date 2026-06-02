@@ -1,6 +1,6 @@
 # Section 1: Orient
 
-> **Time: ~20 min. All together.** Ends with everyone having watched the whole loop once: a real feature, split into Jira tickets.
+> **Time: ~20 min. All together.** Ends with everyone having watched the full OpenSpec arc once on a real feature, and knowing the journey their own room runs.
 
 ## Rules of engagement (read these first)
 
@@ -26,7 +26,7 @@ This gets voices in early and surfaces where the room is starting from. "I haven
 
 Then name the win out loud:
 
-> "By the end of the session you'll have taken one of your own **features** and, with Claude, broken it into **Jira tickets that each deliver real value**: an Epic, a story per behavior, sub-tasks underneath. Product splits the feature; QA writes the test cases. Same move, your half of it."
+> "By the end of the session you'll have taken something you own and, with Claude, made it real, one piece at a time. **Product:** your feature split into **value-bearing Jira tickets in your own project**, an Epic, a Story per behavior, sub-tasks, each backed by a proposal and a spec. **QA:** test cases to your team's standard saved to your shared repo, plus a **shared skill** so the team drafts to the same bar next time. Same habit, your half of it."
 
 ## The gentle frame (3 min)
 
@@ -72,12 +72,15 @@ Then close the demo with the honest line:
 
 > "That's the whole move, and it's exactly what you'll do next: one fuzzy feature, explored, split, and turned into tickets that each deliver something, one artifact at a time. grill-me found what I'd have missed; the thinking was still mine. Now you do it on yours."
 
+> **QA, your parallel arc (the [QA room](section-2-breakout.md), same habit).** You won't split a feature into tickets; you'll hold a story to the bar. Pull your own ticket, run `grill-me` to surface what it takes to test it, draft to your team's [Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard) (or level up cases that already exist), then critique and improve before you save. The payoff is a shared `write-test-cases` skill committed back so the whole team drafts the same way. (Facilitator B can speak to this in 30 seconds so QA folks have their template too.)
+
 > **Autosave aside (10 seconds):** point out that Claude's been making tiny git commits after each step. *"That's autosave, you never touch git. It's just an undo trail."*
 
 ## Done when
 
 - Two people have said how they've used Claude
-- The room has watched the full arc once: a feature **read from Jira**, **grilled into completeness**, **split by behavior**, a **proposal and one spec written and reviewed one at a time**, and a **ticket tree created on confirm**
+- The room has watched the full Product arc once: a feature **read from Jira**, **grilled into completeness**, **split by behavior**, a **proposal and one spec written and reviewed one at a time**, and a **ticket tree created on confirm**
+- QA has heard their **parallel arc** (pull the ticket, grill what's needed, draft to the standard, critique, save)
 - Everyone knows which room they're in and what they're producing
 
 Send them to [Section 2](section-2-breakout.md).
