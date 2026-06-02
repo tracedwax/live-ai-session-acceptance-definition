@@ -15,7 +15,7 @@ This is not a slides session, and it's not about learning a tool for its own sak
 By the time we close, you have:
 
 1. **A real feature, turned into buildable tickets** —
-   - **Product:** a **ticket tree in the Playground** — an Epic, a Story per behavior (each with its business-value "Why"), sub-tasks underneath — backed by a reviewed OpenSpec proposal + specs.
+   - **Product:** a **ticket tree in your own Jira project** — an Epic, a Story per behavior (each with its business-value "Why"), sub-tasks underneath — backed by a reviewed OpenSpec proposal + specs.
    - **QA:** test cases to the team standard (drafted or cleaned up) saved to `qa-shared-tools` — plus a shared `write-test-cases` skill committed back so the team drafts to the same bar.
 2. **A captured preference** — the one thing you kept insisting on, written into a `CLAUDE.md` so Claude does it that way next time without being told.
 3. *(Stretch)* **Your own skill** — a saved, one-command way to do it again the way you like it.

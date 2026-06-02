@@ -22,7 +22,7 @@ Bring whatever you have *about* it, too: the requirements you were handed, a Sla
 
 ## Connect Jira (we'll confirm in the room)
 
-You'll **create real tickets** in a safe **Playground** Jira project live — so your Jira connection (the "MCP") needs to be on. *(Your facilitator gives you the Playground project key in the room — nothing you make there touches a real backlog.)*
+You'll **create real tickets in your own Jira project** live — so your Jira connection (the "MCP") needs to be on. Nothing gets created until you read the whole ticket tree and say go, and a wrong ticket is one click to delete. *(If you'd rather not touch your real backlog, a sandbox/Playground project works as a backup.)*
 
 - If a drop-in already connected your Jira, you're set.
 - If not, **come to a drop-in before June 2** or flag it in the channel. A facilitator can also drive the demo on their own Jira so you still see the whole loop.

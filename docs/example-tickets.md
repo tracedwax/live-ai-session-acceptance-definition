@@ -62,7 +62,7 @@ Its "Acceptance Criteria" is a nested implementation checklist — "add a sectio
 > *"Let's use OpenSpec. Explore this whole feature with me before we write or split anything — [paste CHK-3334, or your own]. What are all the distinct behaviors here? What would a developer still have to guess? Ask me one thing at a time."*
 
 then `grill me` to find the gaps, then:
-> *"Split this into independently shippable behaviors (one bucket each, named like a behavior, with a one-line 'Why'). Then create the OpenSpec change — a proposal plus a spec per behavior — and from it an Epic + a Story per behavior + sub-tasks in the Playground project. Show me the tree before creating anything."*
+> *"Split this into independently shippable behaviors (one bucket each, named like a behavior, with a one-line 'Why'). Then create the OpenSpec change — a proposal plus a spec per behavior — and from it an Epic + a Story per behavior + sub-tasks in my own Jira project. Show me the tree before creating anything."*
 
 **QA:**
 > *"Follow our Test Case Standard in `qa-shared-tools` and match the format of the real `QUAL-4510` example there. Draft test cases for this story: Action / Data / Expected Result, definitive language, negative path inline. If test cases already exist, normalize them to the standard and flag duplicates instead."*

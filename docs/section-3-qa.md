@@ -17,7 +17,7 @@ Keep it concrete. "Here's the fuzzy feature, here are the tickets" beats any exp
 
 Anything from the session. Likely ones, with the short answer:
 
-- **"When do I trust it to create tickets?"** — When you've read the tree and you'd have drawn something close to it yourself. The review *is* the safety — and it's the Playground anyway.
+- **"When do I trust it to create tickets?"** — When you've read the tree and you'd have drawn something close to it yourself. The review *is* the safety — and a wrong ticket is one click to delete.
 - **"How small should a Story be?"** — One behavior a user can observe; one sentence to describe; if a spec needs >6–8 scenarios, split it.
 - **"What if I don't have a good example to paste?"** — Use the [example tickets](example-tickets.md). PUR-6243 is the one to copy for shape.
 - **"Is this just for features?"** — No. Same loop works for a single story, a test plan, a release note. A feature is just today's rep.

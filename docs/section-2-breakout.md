@@ -13,7 +13,7 @@ Pick your room. Copy the prompts. Change the bracketed bits.
 
 ## 🟦 Product room — break a feature into value-bearing Jira tickets
 
-**You leave with:** your feature broken into **Jira tickets in the Playground project** — one **Epic** (the feature), a **Story per behavior** (each with its own business-value "Why"), and **sub-tasks** under each — every Story backed by a proposal and a spec a developer could build from and QA could verify.
+**You leave with:** your feature broken into **real Jira tickets in your own project** — one **Epic** (the feature), a **Story per behavior** (each with its own business-value "Why"), and **sub-tasks** under each — every Story backed by a proposal and a spec a developer could build from and QA could verify.
 
 The move you're learning is **divide and conquer**: explore the *whole* feature, find the natural seams *between behaviors*, and let each behavior become one well-sized, independently shippable ticket. The full method is in **[The OpenSpec Process](openspec-process.md)** — keep it open.
 
@@ -81,13 +81,13 @@ This is the part that matters. Read the proposal and each spec *cold* — as the
 Sharpen until it's true. If one spec has **more than 6–8 scenarios**, it's doing too much — ask Claude to split that behavior into two. (Each split = one more Story.)
 
 ### Step 5 — Create the Jira tickets (Epic → Stories → sub-tasks)
-Now turn the artifacts into a real ticket tree in the **Playground** Jira project *(your facilitator gives you the project key)*. Confirm before each write:
+Now turn the artifacts into a real ticket tree in **your own Jira project** — the one your feature actually lives in. Confirm before each write:
 
-> *"In the Jira **[PLAYGROUND]** project, create an **Epic** from the proposal (title + the 'Why' as the description). Then create one **Story per capability spec** — each Story's description is that behavior's 'Why' (its business value) plus a link/summary of its spec. Then add the `tasks.md` items as **sub-tasks** under the right Story. Show me the full tree as a plan first — don't create anything until I say go."*
+> *"In Jira project **[YOUR-PROJECT]**, create an **Epic** from the proposal (title + the 'Why' as the description). Then create one **Story per capability spec** — each Story's description is that behavior's 'Why' (its business value) plus a link/summary of its spec. Then add the `tasks.md` items as **sub-tasks** under the right Story. Show me the full tree as a plan first — don't create anything until I say go."*
 
 Read the plan. Check the obvious things: **does every Story name a behavior and a value?** Are there any "layer" Stories hiding (split those)? Then say **"go,"** and let it create them. Spot-check one Story in Jira when it's done.
 
-> No Jira write access yet? Have Claude **print the full Epic/Story/sub-task tree as markdown** and create them by hand in the Playground — same outcome, you just paste.
+> **The review *is* the safety** — you read the whole tree before anything is created, and a wrong ticket is one click to delete. **Want a no-risk run first?** Have Claude **print the full tree as markdown** so you can eyeball it, or point it at a **sandbox/Playground project** as a backup if you've got one.
 
 ### Step 6 — *(Stretch)* go deeper
 Finished early? Push the specs further — negative paths, rollback behavior, the non-obvious edge cases — and fold them in. Or note the **dependency order** between your Stories (which must ship before which) in each Story's description, so sprint planning is already done.
@@ -107,7 +107,13 @@ git clone "https://dev.azure.com/awdenver/Aspenware%20Commerce/_git/qa-shared-to
 ```
 Make a branch so nothing touches `main`: `git checkout -b qa-training/<your-name>`. Start Claude here.
 
-> **Access:** you may need your team (Katie's team) to add your Aspenware account to the repo — flag it early if you can't clone. **No access yet?** Paste the story and the standard into Claude and work in a local folder; share once access lands.
+> **Access:** the QA team has shared access to this repo. **No access yet?** Paste the story and the standard into Claude and work in a local folder; share once access lands.
+
+<details>
+<summary>🔒 <strong>For facilitators only</strong> — backup reference repo</summary>
+
+Attendees play in their own shared repo (`qa-shared-tools`). If the standard, the `QUAL-4510` example, or the skills aren't reachable, the **old training repo** mirrors that structure and ships all of them as a fallback: [github.com/tracedwax/ac-training-repo](https://github.com/tracedwax/ac-training-repo) ([zip](https://github.com/tracedwax/ac-training-repo/archive/refs/heads/main.zip)). Pull what's needed from there and drop it in — don't send attendees to it.
+</details>
 
 ### Step 2 — Pull the story and its AC
 > *"Pull ticket [KEY] from Jira. Read its acceptance criteria and testing notes. Don't write anything yet — list what you'd need to verify it."*
@@ -161,7 +167,7 @@ Next feature, you just say *"break this feature into tickets"* (or *"write test 
 
 ## Done when
 
-- Your feature is real work now: Product has a **value-bearing ticket tree in the Playground** — an Epic, a Story per behavior, sub-tasks — each Story backed by a reviewed proposal + spec. QA has **test cases** to the team standard, saved on a branch — and ideally a **shared `write-test-cases` skill** committed back to `qa-shared-tools`.
+- Your feature is real work now: Product has a **value-bearing ticket tree in their own Jira project** — an Epic, a Story per behavior, sub-tasks — each Story backed by a reviewed proposal + spec. QA has **test cases** to the team standard, saved on a branch — and ideally a **shared `write-test-cases` skill** committed back to `qa-shared-tools`.
 - *(Stretch)* one preference is in a `CLAUDE.md`.
 
 Bring one result and one honest opinion to [Section 3](section-3-qa.md).
