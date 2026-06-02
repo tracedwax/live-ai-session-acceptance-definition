@@ -5,10 +5,10 @@
 ## Cross-cutting
 
 - **You demo the loop once, then get out of the way.** The learning is them doing it, not you explaining it.
-- **Protect the one win.** If time gets tight, everyone leaves with *sharper AC pushed to their ticket.* The CLAUDE.md and the saved skill are stretch. Cut from the top of the stretch, never from the win.
+- **Protect the one win.** If time gets tight, everyone leaves with real output — Product: *a reviewed OpenSpec change uploaded to their ticket;* QA: *sharp test cases saved.* The CLAUDE.md and the saved skill are stretch. Cut from the top of the stretch, never from the win.
 - **Confirm-to-push is the safety story — say it out loud.** Every time the agent writes to Jira, the human reads the diff first and says go. Model it in the demo; insist on it in the rooms. This is what makes "let the agent touch our real backlog" okay.
 - **Messy input is correct.** If someone apologizes for rough notes, tell them that's the ideal input. The agent does better with raw material than with a polished paragraph.
-- **Meet them where they are.** Their tickets mix formats. We're nudging toward Given/When/Then (it's testable), not declaring their old AC wrong.
+- **Meet them where they are.** Their tickets mix formats. We're nudging toward clear, testable specs — not declaring their old tickets wrong.
 
 ## Two-room coordination
 
@@ -26,13 +26,17 @@
 - *Jira won't connect live.* Mitigation: you drive on **your** Jira; attendees connect in the room with B floating. Never spend more than 2 minutes on one person's connection in the open — move it to the breakout.
 
 ### Section 2 — Breakout
-**Cues it's landing:** people stop reading the prompt page and start typing their own follow-ups; someone says "oh, it caught that I didn't say what happens when it's empty."
-**Fallback if stuck (by ~10 min in):** *"Don't write it yourself yet. Paste everything you've got and the example, and just ask for a first pass. We fix it after."*
+**Product cues it's landing:** someone stops trying to write the spec themselves and lets the **Explore** phase ask them questions; someone says "oh — I never decided what happens when it's empty." The OpenSpec change appears under `openspec/changes/`.
+**QA cues it's landing:** people stop reading the prompt page and start typing their own follow-ups; someone says "it caught the regression I'd have missed."
+**Fallback if stuck (by ~10 min in):** *"Don't write it yourself yet. Dump everything you've got and let the explore phase ask you questions. We turn it into a proposal after."*
 **Risks:**
-- *Someone has no ticket.* Mitigation: hand them [CHK-3334](example-tickets.md) and have them sharpen it.
-- *The one-shot looks "good enough" and they stop.* Mitigation: *"Read it as the dev who has to build it — name one thing they'd still guess."* There's always one.
-- *Push anxiety.* Mitigation: reassure — the draft is local; the push shows a diff; they say go. Let them push something small first.
-- *Over-engineering the skill.* Mitigation: hard rule — the skill fits on one screen. v0 is fine.
+- *Someone has no ticket.* Mitigation: hand them [CHK-3334](example-tickets.md) and have them explore + spec it.
+- *OpenSpec / install friction (Product).* Mitigation: have Claude install it (`npm i -g @fission-ai/openspec`) or use a pre-built workspace; never burn more than ~2 min — move on with the training repo and circle back.
+- *They treat Explore as "give me the answer fast."* Mitigation: *"This phase is for thinking. Let it ask you the awkward questions — that's where the spec gets good."*
+- *They try to fill in `design.md` / `tasks.md`.* Mitigation: remind them those are the **developer's**; Product owns Explore → Proposal → Spec.
+- *The first proposal looks "good enough" and they stop.* Mitigation: *"Read it as the dev who has to build it — name one thing they'd still guess."* There's always one.
+- *Push anxiety.* Mitigation: reassure — the draft is local; the push shows what it'll write; they say go. Let them push something small first.
+- *Over-speccing.* Mitigation: hard rule — the spec covers the behavior that matters, not every theoretical case. One screen of real scenarios beats ten of filler.
 
 ### Section 3 — Q&A
 **Cues:** people comparing the before/after, not just praising the tool.
@@ -44,8 +48,9 @@
 ## Dry-run checklist
 
 - [ ] Demo loop runs end-to-end on a real ticket, including a **reviewed push**
-- [ ] One full **Product** loop on a real ticket — time it, note friction
+- [ ] One full **Product** run on a real ticket — **Explore → Propose → review the spec → upload to Jira** — time it, note friction
 - [ ] One full **QA** loop producing a test-case markdown file
+- [ ] OpenSpec **install + init** tested on a non-facilitator machine (or the live "Claude builds it" path)
 - [ ] The **capture finale** once — CLAUDE.md written, a skill saved, then re-invoked
 - [ ] Jira connect tested on at least one **non-facilitator** machine
-- [ ] You know your **cut line**: if you're at 0:45 and a room isn't done, stop at "pushed AC" and skip the finale
+- [ ] You know your **cut line**: if you're at 0:45 and a room isn't done, stop at "reviewed change/test cases uploaded" and skip the finale

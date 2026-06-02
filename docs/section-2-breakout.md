@@ -1,51 +1,69 @@
 # Section 2 — Breakout: do it on your own ticket
 
-> **Time: ~30 min. Two rooms.** This is the build. You watched the loop; now you run it on a ticket you actually own.
+> **Time: ~30 min. Two rooms.** This is the build. You saw the loop in the orient; now you do the real thing on a ticket you actually own.
 
-Same loop in both rooms. Product writes the **story + acceptance criteria**. QA writes the **test cases**. Pick your room; copy the prompts; change the bracketed bits.
+Two rooms, two different jobs:
 
-## The loop (both rooms)
+- **Product** turns a rough ticket into an **OpenSpec change** — a proposal and a spec a developer could build from.
+- **QA** turns a story's acceptance criteria into **test cases**.
 
-1. **Dump everything** you have into Claude — the ticket, the requirements, your notes, a transcript. Messy is good.
-2. **Show a good example** so it copies the shape you want.
-3. **Ask for a first pass.** Read it *cold*, as the person who'd receive it.
-4. **If it's not good — `grill me`.** Let Claude interview you one question at a time and build it step by step.
-5. **Review the local draft, then confirm-to-push** to your ticket. Nothing goes to Jira until you say go.
-6. *(Stretch)* **Capture the way you like it** — into a `CLAUDE.md`, then a saved skill.
+Pick your room. Copy the prompts. Change the bracketed bits.
 
 ---
 
-## 🟦 Product room — a story with testable AC
+## 🟦 Product room — turn a ticket into an OpenSpec change
 
-**You leave with:** acceptance criteria a developer could build from and QA could verify, pushed to your ticket.
+**You leave with:** an **OpenSpec change** for your ticket — a **proposal** (what & why) and a **spec** (the behavior a developer could build and QA could verify) — reviewed by you and uploaded to your Jira ticket.
 
-### Step 1 — Open your workspace
-Open the **training repo's `scratch/` folder** in VS Code and start Claude there.
+The crux of the Product track is the three OpenSpec phases you own: **Explore → Proposal → Spec.** The **Design** and the code are the developer's — they'll redo these phases in the real repo, which is quick once your thinking is captured.
 
-### Step 2 — Dump everything
-> *"I need to write/sharpen a user story. Here's the ticket and everything I have about it — the requirements I was given, my own notes, and [paste any transcript or Slack]. Read it all. Don't write anything yet — just tell me what's still ambiguous."*
+> **What's OpenSpec?** A simple way to write down *what* you want **before** any code gets written, so the agent — and your developer — build the right thing. The phases live at **[openspec.dev](https://openspec.dev/)**. Today you do the first three.
 
-### Step 3 — Show a good example
-Open [example-tickets.md](example-tickets.md) and paste the AC from **PUR-6243**:
-> *"Here's a ticket whose acceptance criteria I like — match this shape: Given / When / Then, each one testable, edge cases named separately."*
+### Step 1 — Let Claude build you a workspace
+You don't need a code repo. Ask Claude to make one:
 
-### Step 4 — One-shot it, then read it cold
-> *"Now draft acceptance criteria for my story."*
+> *"Create a fresh folder for this work and set up OpenSpec in it. We're going to write a change proposal — no application code. If OpenSpec isn't installed, install it first."*
 
-Read it as the developer who has to build it. **Where would they still have to guess?** What edge case is missing?
+Claude scaffolds it (the `openspec/` structure and the `/opsx:` commands). Already have the **training repo** open? Just set OpenSpec up right there.
 
-### Step 5 — Grill yourself
-> *"`grill me` on these acceptance criteria. One question at a time. For each, suggest your recommended answer."*
+> If install stalls, flag it in the channel — a facilitator gets you unblocked. Don't lose live minutes to setup.
 
-Answer honestly. Watch it go from generic to *yours*. Tell it to write the result to `scratch/[TICKET].md` so you can see the draft.
+### Step 2 — Phase 1: Explore (think it through)
+This is thinking time, not writing time. Dump everything and let Claude be a thinking partner:
 
-### Step 6 — Confirm-to-push
-> *"Update the acceptance criteria on ticket [KEY] in Jira. Show me exactly what you'll change first."*
+> *"Let's use OpenSpec — explore this with me before we write anything. Here's my ticket and everything I have about it: [paste the ticket, your notes, the refinement call, a Slack thread]. What's ambiguous? What would a developer still have to guess? Ask me one thing at a time."*
 
-Read the change. If it's right, say **"go."** If not, keep grilling. *You* own the push.
+Shortcut: type **`/opsx:explore`**. Answer its questions. Let it sketch the change, surface edge cases, and challenge your assumptions. **Don't rush to the proposal** — the clarity you get here is the point.
 
-### Step 7 — *(Stretch)* go deeper
-No AC to sharpen, or finished early? Build the **rest of the story** — problem statement, scope, out-of-scope — the same way: dump, example, draft, grill.
+> Got a Figma frame or a Claude prototype? **Screenshot it and drag it into the chat.** That's enough for now.
+
+### Step 3 — Phases 2 & 3: Propose (the proposal + the spec)
+When it feels solid, turn the thinking into a change:
+
+> *"Now create an OpenSpec change for this — a clear **proposal** (what & why) and a **spec** of the behavior."*
+
+Shortcut: type **`/opsx:propose`**. Claude generates the artifacts under `openspec/changes/<your-change>/`:
+
+- **`proposal.md`** — *what* you're changing and *why* — **Phase 2**
+- **`specs/.../spec.md`** — the **required behavior**, written as testable scenarios — **Phase 3**
+- It also scaffolds a `design.md` and `tasks.md`. **Leave those alone** — that's the developer's starting point, not yours.
+
+### Step 4 — Review the spec until it makes sense
+This is the part that matters. Open the **proposal** and the **spec** and read them *cold* — as the developer who has to build it and the QA who has to verify it. **Where would they still have to guess?**
+
+> *"`grill me` on this spec — one question at a time. Push on the scenarios I'm missing and anything a developer would still have to guess."*
+
+Sharpen it until it reads true. The goal, in plain terms: **do the phases, review them so they make sense, and land it in a document you can edit and reason about.**
+
+### Step 5 — Hand it off to the ticket
+Put the artifacts where the team already looks:
+
+> *"Post my proposal and spec onto Jira ticket [KEY] — as a comment or in the description. Show me the text first."* — read it, then say **"go."**
+
+No Jira write yet? **Upload the artifacts to the ticket by hand for now** — that's fine until the repo workflow matures. From here the developer picks it up and redoes Explore → Proposal → Spec → **Design** in the real code repo — fast, because you already did the thinking.
+
+### Step 6 — *(Stretch)* go deeper
+Finished early? Explore a **second** ticket, or push this spec further: ask for the negative paths, the rollback behavior, and the non-obvious edge cases, and fold them into the spec.
 
 ---
 
@@ -94,7 +112,7 @@ Push the **branch** if you want to share it (open a PR later) — **never push t
 
 ## ⭐ The capture finale (both rooms — stretch)
 
-This is the part that pays off next week. After your AC or test cases are good:
+This is the part that pays off next week. After your **spec** (Product) or **test cases** (QA) are good:
 
 **1. Find your preference**
 > *"Looking back at everything I corrected you on while we built this — what are the one or two rules I clearly care about? State them as short preferences."*
@@ -105,13 +123,13 @@ This is the part that pays off next week. After your AC or test cases are good:
 Now Claude loads that preference automatically next time.
 
 **3. Save it as your own skill**
-> *"Turn the way we just did this into a reusable skill. Create `.claude/skills/write-acceptance-criteria/SKILL.md` (or `write-test-cases`) — a one-line description and the steps we followed. Ask me one question at a time if you need to."*
+> *"Turn the way we just did this into a reusable skill — Product: `.claude/skills/write-openspec-change/SKILL.md`; QA: `.claude/skills/write-test-cases/SKILL.md`. A one-line description and the steps we followed. Ask me one question at a time if you need to."*
 
-Next ticket, you just say *"write acceptance criteria for this"* and it works **your way**.
+Next ticket, you just say *"write the OpenSpec change for this"* (or *"write test cases for this"*) and it works **your way**.
 
 ## Done when
 
-- Your ticket's AC (Product) or test cases (QA) are sharper than they started, and you've **reviewed and pushed/saved** them
-- *(Stretch)* one preference is in a `CLAUDE.md`, and/or you saved a skill
+- Your ticket is real work now: Product has a **reviewed OpenSpec change** (proposal + spec) uploaded to the ticket; QA has **test cases** to our standard, saved and reviewed.
+- *(Stretch)* one preference is in a `CLAUDE.md`, and/or you saved a skill.
 
 Bring one result and one honest opinion to [Section 3](section-3-qa.md).

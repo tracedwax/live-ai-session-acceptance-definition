@@ -1,6 +1,6 @@
 # Example Tickets
 
-Four real tickets, shipped with the training repo. Two are **"copy this shape"** examples to paste as good examples; two are **"sharpen this"** examples to practice on. Open this page in the room and paste from it.
+Four real tickets, shipped with the training repo. **Product:** the rough ones (**CHK-3334**, **PUR-6336**) are the raw material to **explore and spec** — the kind of vague ticket OpenSpec is built for. **QA:** **PUR-6243** and **QUAL-4510** are the format to copy. The two clean examples (**PUR-6243**, **PPA-4978**) also show what "clear, testable behavior" looks like — handy to point at while you spec. Open this page in the room and work or paste from it.
 
 | Ticket | Type | Use it as | Why |
 |--------|------|-----------|-----|
@@ -48,7 +48,7 @@ The AC, as written (real):
 > 3. When not selected, saved to the AW DB only; nothing sent to RTP.
 > 4. Regression: Order Details must reflect whatever was entered at checkout.
 
-**Why it's a good practice target:** it's requirement-shaped, not test-shaped. "Always displayed" — under every state? Phone required only for FP 3DS — where's that AC? Convert it to Given/When/Then and the gaps fall out. (The ticket's own "Testing Notes" scenario table is a hint at what the AC should cover.)
+**Why it's a good practice target:** it's requirement-shaped, not behavior-shaped. "Always displayed" — under every state? Phone required only for FP 3DS — where's that scenario? **Explore** it with Claude and the gaps fall out; **spec** it as testable scenarios and they get answered. (The ticket's own "Testing Notes" scenario table is a hint at what the spec should cover.)
 
 ## ✏️ PUR-6336 — is this even AC?
 
@@ -58,8 +58,11 @@ Its "Acceptance Criteria" is a nested implementation checklist — "add a sectio
 
 ## How to paste these in
 
-**Product:**
-> *"Here's a ticket whose acceptance criteria I like — [paste from PUR-6243]. Match this shape for my ticket: Given / When / Then, each one testable, edge cases named separately."*
+**Product (explore → spec):**
+> *"Let's use OpenSpec. Explore this ticket with me before we write anything — [paste CHK-3334, or your own]. What's ambiguous? What would a developer still have to guess? Ask me one thing at a time."*
+
+then, when it's solid:
+> *"Now create an OpenSpec change — a proposal (what & why) and a spec of the behavior as testable scenarios."*
 
 **QA:**
 > *"Follow our Test Case Standard (`standards/test-case-standard.md`) and match the format of `examples/QUAL-4510.md`. Draft test cases for this story: Action / Data / Expected Result, definitive language, negative path inline."*

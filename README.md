@@ -1,7 +1,5 @@
-# Class 1 — Skills (Week 0)
+# Product & QA — Specs & Test Cases with Claude
 
-AI training Class 1 (Tue 2026-05-27). SOW Week 0: Introduction — prompt & context engineering, Agents/CLAUDE.md, prompts, skills.
+A hands-on, 60-minute live session. **Product** turns a real ticket into an **OpenSpec change** (Explore → Proposal → Spec) a developer can build from; **QA** turns a story's acceptance criteria into **test cases**. Both work in **Claude Code inside VS Code**.
 
-The workshop site is a [Docsify](https://docsify.js.org) site in [`docs/`](docs/), served via GitHub Pages (`/docs` on `main`).
-
-> Authored via OpenSpec. See `openspec/`.
+The workshop site is a [Docsify](https://docsify.js.org) site in [`docs/`](docs/), served via GitHub Pages (`/docs` on `main`). Start at [`docs/`](docs/README.md).
