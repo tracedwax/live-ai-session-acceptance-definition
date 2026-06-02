@@ -1,6 +1,6 @@
 # Section 1: Orient
 
-> **Time: ~20 min. All together.** Ends with everyone having watched the full OpenSpec arc once on a real feature, and knowing the journey their own room runs.
+> **Time: ~20 min. All together.** Ends with everyone having seen a finished OpenSpec example, and knowing the journey their own room runs.
 
 ## Rules of engagement (read these first)
 
@@ -44,11 +44,11 @@ Let it answer. Then:
 
 > **Talking point that lands:** *"You just watched me onboard a teammate who's read the entire ticket before I finished asking."*
 
-## Connect Jira & watch the loop (10 min)
+## Connect Jira & see a finished OpenSpec example (10 min)
 
 > **First, make sure Jira answers in this folder.** If you set the Jira MCP up in another repo, it may be configured there and not here. Ask Claude to **move the MCP config to your global setup** so it works in every folder. Not sure where yours lives, or starting fresh? Just ask Claude to walk you through MCP setup.
 
-This is the demo, and it is the whole point of the opening: **Erin runs OpenSpec on one real feature, soup to nuts, the exact arc the Product room will do in [Section 2, Steps 1-5](section-2-breakout.md).** Drive on a real feature, narrate as you go, and go **one artifact at a time** (don't one-shot it). Move briskly: do the proposal and one spec for real, summarize the rest. (No Jira connection? Drive on your own.)
+This is the opening look, not a live build: **Trace shares a finished OpenSpec example** so the room sees the shape they're aiming for, the same arc the Product room runs in [Section 2, Steps 1-5](section-2-breakout.md). Put a completed change on screen, the proposal, a spec or two, and the Jira ticket tree it produced, and walk the shape out loud. The real building, one artifact at a time, happens in the breakout; here we just study a good finished one.
 
 **The reveal, Claude reads Jira for you:**
 
@@ -58,28 +58,28 @@ When it comes back, name it (gently):
 
 - "Notice I didn't paste the ticket. Claude **read it from Jira** for me. That connection is called an **MCP**: it just means Claude can reach the tools you already use."
 
-**Then walk the arc, narrating each step (these are the room's Steps 1-5):**
+**Then walk the example, naming each piece (these are the room's Steps 1-5):**
 
-1. **Explore the whole feature (Step 1).** Dump the ticket plus your rough notes and what was said in refinement, and ask Claude to map **every behavior the feature touches**, without writing a spec yet. (`/opsx:explore` does the same.)
-2. **Grill out the gaps (still Step 1).** Run the `grill-me` skill and answer 2-3 questions live. Name it:
-   > **The point:** *"I didn't have to know the right questions. grill-me found the holes, and every answer is a decision that belongs in the ticket. That's how it gets complete before anyone writes code."*
-3. **Split by behavior (Step 2).** Ask Claude to break the feature into independently shippable behaviors, each with a one-line "Why". Say out loud: *"Not a frontend ticket and a backend ticket, those have no value on their own. We split by what a user can see work."*
-4. **Write the proposal, then review it (Step 3).** *"Draft just the proposal, the what and why. Don't write specs yet."* Open `proposal.md` on screen, read it aloud, point at one thing you'd fix. Name the habit: *"I'm not letting it one-shot the whole change. One artifact, then I read it. You'll do the same."*
-5. **Write one spec, then review it (Step 4).** *"Now the spec for just this one behavior, as WHEN/THEN."* Open the spec, read it, grill one unhappy path. Mention the rest get the same treatment, one at a time.
-6. **Create the tickets, confirm-first (Step 5).** *"Create the Epic from the proposal, then a Story for this behavior with its 'Why', plus sub-tasks. Show me the tree first."* Read it, then say **"go."** Say it out loud: these are **practice tickets, a clone**, in your own project or the **Mocking Project** (`MP`) sandbox, not an update to a real feature (and never another team's project). Nervous? Have Claude print the tree as markdown instead.
+1. **Explore + grill (Step 1).** Show how the messy feature got mapped to every behavior it touches, and point out where the `grill-me` answers ended up written into the spec. Name it: *"I didn't have to know the right questions; grill-me found the holes, and every answer became a decision in the ticket."*
+2. **Split by behavior (Step 2).** Show the 2-4 behaviors, each named like a behavior with a one-line "Why". Say it: *"Not a frontend ticket and a backend ticket, those have no value alone. We split by what a user can see work."*
+3. **Proposal (Step 3).** Open `proposal.md`, read the what and why; that became the **Epic**.
+4. **Specs (Step 4).** Open one `spec.md`, show the WHEN/THEN scenarios; each spec became a **Story**.
+5. **Tickets (Step 5).** Show the **Epic**, a **Story per behavior**, **sub-tasks** underneath.
 
-Then close the demo with the honest line:
+Name the habit: *"This got built one artifact at a time, each one reviewed, not one-shot. That's what you'll do next, on your own ticket, as a practice clone."*
 
-> "That's the whole move, and it's exactly what you'll do next: one fuzzy feature, explored, split, and turned into tickets that each deliver something, one artifact at a time. grill-me found what I'd have missed; the thinking was still mine. Now you do it on yours."
+Then close:
+
+> "That's the target: one fuzzy feature, explored, split, and turned into tickets that each deliver something. You'll build your own in a minute, one piece at a time. Let's split into rooms."
 
 > **QA, your parallel arc (the [QA room](section-2-breakout.md), same habit).** You won't split a feature into tickets; you'll hold a story to the bar. Pull your own ticket, run `grill-me` to surface what it takes to test it, draft to your team's [Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard) (or level up cases that already exist), then critique and improve before you save. The payoff is a shared `write-test-cases` skill committed back so the whole team drafts the same way. (Facilitator B can speak to this in 30 seconds so QA folks have their template too.)
 
-> **Autosave aside (10 seconds):** point out that Claude's been making tiny git commits after each step. *"That's autosave, you never touch git. It's just an undo trail."*
+> **Autosave aside (10 seconds):** mention that in the breakout, Claude autosaves with a tiny git commit after each step. *"You never touch git; it's just an undo trail."*
 
 ## Done when
 
 - Two people have said how they've used Claude
-- The room has watched the full Product arc once: a feature **read from Jira**, **grilled into completeness**, **split by behavior**, a **proposal and one spec written and reviewed one at a time**, and a **ticket tree created on confirm**
+- The room has seen a **finished OpenSpec example** (the proposal, a spec, and the ticket tree) and the **5-step shape** they'll follow
 - QA has heard their **parallel arc** (pull the ticket, grill what's needed, draft to the standard, critique, save)
 - Everyone knows which room they're in and what they're producing
 

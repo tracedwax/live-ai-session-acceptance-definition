@@ -13,7 +13,7 @@ Pick your room. **Each step tells you what to accomplish and why, not what to ty
 
 > **Everyone hands on keys, please. :)** This part isn't TV. Do it on your own ticket as we go and keep your screen shared, we're all working at once, not watching one person.
 
-> **This is practice, not a deliverable, so don't chase perfect.** When grill-me or the spec process throws questions at you, answer the easy ones, note the rest, and keep moving; rough and partial is the point today. And you're working a **clone, nothing real changes**: Product creates brand-new practice tickets (your own project or the sandbox, never another team's), QA drafts on a branch. You can't break anything, so just play.
+> **This is practice, not a deliverable, so don't chase perfect.** When grill-me or the spec process throws questions at you, answer the easy ones, note the rest, and keep moving; rough and partial is the point today. And you're working a **clone, nothing real changes**: Product creates brand-new practice tickets (your own project or the sandbox), QA drafts on a branch. You can't break anything, so just play.
 
 > **Reviewing what Claude writes.** Everything lands as markdown you can open and read (Product: under `openspec/changes/<your-feature>/`, one file per piece, proposal then each spec; QA: your test-case files on your branch). In VS Code, open a file and press **Cmd+Shift+V** (Windows **Ctrl+Shift+V**) for a formatted preview, or **Cmd+K** then **V** for a side-by-side preview.
 
@@ -42,8 +42,13 @@ Open Claude in **the folder you already work in**. You're not creating a new rep
 
 Get two things in place, and you can simply ask Claude to do both: **pull the process doc into your folder** (it's the [OpenSpec Process](openspec-process.md) page on this site) so the agent follows our method, and **turn on autosave** so it makes a tiny git commit after each step. Autosave means you never touch git; it's just an undo trail.
 
+Then, before you dive in, **ask Claude what OpenSpec can do and how it works**, a quick primer in its own words so the steps below land.
+
 <details>
 <summary>Here's an example you can use, only if you're stuck</summary>
+
+Get oriented:
+> *"What can OpenSpec do, and how does it work? Give me the 60-second version, then the phases I'll touch today."*
 
 Give Claude the process to follow:
 > *"Add the OpenSpec process guide to this folder as `openspec-process.md`, then read it. If OpenSpec isn't installed, install it and initialize it here."*
@@ -115,7 +120,7 @@ then run the `grill-me` skill on the spec and answer its questions.
 ### Step 5: Create the Jira tickets, in reviewable chunks
 *Erin's doc: [How Jira and OpenSpec connect](openspec-process.md?id=how-jira-and-openspec-connect-step-by-step).*
 
-Build the tree as **new practice tickets**, a clone to play with, not an update to your real ticket. Create them in **your own project** (label the Epic so it reads as practice) or the **[Mocking Project (`MP`)](https://aspenware.atlassian.net/jira/software/projects/MP/boards)** sandbox. **Don't create them in another team's project.** Go in pieces you can check: the **Epic** from the proposal, then **one Story per spec** (its "Why" is the description), then a few **sub-tasks** per Story from the tasks list. **Make the agent show the plan first**, then read it: does every Story name a behavior and a value? Any "layer" Stories hiding? Only then say go, and spot-check in Jira after.
+Build the tree as **new practice tickets**, a clone to play with, not an update to your real ticket. Create them in **your own project** (label the Epic so it reads as practice) or the **[Mocking Project (`MP`)](https://aspenware.atlassian.net/jira/software/projects/MP/boards)** sandbox. Go in pieces you can check: the **Epic** from the proposal, then **one Story per spec** (its "Why" is the description), then a few **sub-tasks** per Story from the tasks list. **Make the agent show the plan first**, then read it: does every Story name a behavior and a value? Any "layer" Stories hiding? Only then say go, and spot-check in Jira after.
 
 > **The review *is* the safety:** you see the tree before anything is created, and a wrong ticket is one click to delete.
 
