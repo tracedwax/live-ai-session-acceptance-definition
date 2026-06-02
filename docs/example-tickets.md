@@ -56,13 +56,16 @@ Its "Acceptance Criteria" is a nested implementation checklist, "add a section t
 
 ---
 
-## How to paste these in
+## Working from one of these
 
-**Product (explore → split → tickets):**
-> *"Let's use OpenSpec. Explore this whole feature with me before we write or split anything, [paste CHK-3334, or your own]. What are all the distinct behaviors here? What would a developer still have to guess? Ask me one thing at a time."*
+Drop the ticket into Claude and run your room's flow ([Section 2](section-2-breakout.md)): Product explores the whole thing, finds the seams, and builds the ticket tree; QA holds it to the standard and writes the cases. Use your own words, the prompts live in the breakout's click-to-open examples if you get stuck.
 
-then `grill me` to find the gaps, then:
-> *"Split this into independently shippable behaviors (one bucket each, named like a behavior, with a one-line 'Why'). Then create the OpenSpec change, a proposal plus a spec per behavior, and from it an Epic + a Story per behavior + sub-tasks in my own Jira project. Show me the tree before creating anything."*
+<details>
+<summary>Here's an example you can use, only if you're stuck</summary>
+
+**Product:**
+> *"Let's use OpenSpec. Explore this whole feature with me before we write or split anything, [paste CHK-3334, or your own]. What are all the distinct behaviors here? Ask me one thing at a time."* then `grill me`, then *"Split this into independently shippable behaviors, each with a one-line 'Why', then build the Epic + Stories + sub-tasks in my Jira project. Show me the tree first."*
 
 **QA:**
-> *"Follow our Test Case Standard at https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard and match the format of the `QUAL-4510` example. Draft test cases for this story: Action / Data / Expected Result, definitive language, negative path inline. If test cases already exist, normalize them to the standard and flag duplicates instead."*
+> *"Follow our Test Case Standard at https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard and match the format of the `QUAL-4510` example. Draft test cases for this story: Action / Data / Expected Result, definitive language, negative path inline. If test cases already exist, normalize them to the standard and flag duplicates."*
+</details>
