@@ -66,7 +66,7 @@ When it comes back, name it (gently):
 3. **Split by behavior (Step 2).** Ask Claude to break the feature into independently shippable behaviors, each with a one-line "Why". Say out loud: *"Not a frontend ticket and a backend ticket, those have no value on their own. We split by what a user can see work."*
 4. **Write the proposal, then review it (Step 3).** *"Draft just the proposal, the what and why. Don't write specs yet."* Open `proposal.md` on screen, read it aloud, point at one thing you'd fix. Name the habit: *"I'm not letting it one-shot the whole change. One artifact, then I read it. You'll do the same."*
 5. **Write one spec, then review it (Step 4).** *"Now the spec for just this one behavior, as WHEN/THEN."* Open the spec, read it, grill one unhappy path. Mention the rest get the same treatment, one at a time.
-6. **Create the tickets, confirm-first (Step 5).** *"Create the Epic from the proposal, then a Story for this behavior with its 'Why', plus sub-tasks. Show me the tree first."* Read it, then say **"go."** (Real backlog? Use the **Mocking Project** (`MP`) sandbox, or have Claude print the tree as markdown.)
+6. **Create the tickets, confirm-first (Step 5).** *"Create the Epic from the proposal, then a Story for this behavior with its 'Why', plus sub-tasks. Show me the tree first."* Read it, then say **"go."** Say it out loud: these are **practice tickets, a clone**, in your own project or the **Mocking Project** (`MP`) sandbox, not an update to a real feature (and never another team's project). Nervous? Have Claude print the tree as markdown instead.
 
 Then close the demo with the honest line:
 

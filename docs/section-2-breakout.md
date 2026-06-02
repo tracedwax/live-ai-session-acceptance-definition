@@ -13,6 +13,8 @@ Pick your room. **Each step tells you what to accomplish and why, not what to ty
 
 > **Everyone hands on keys, please. :)** This part isn't TV. Do it on your own ticket as we go and keep your screen shared, we're all working at once, not watching one person.
 
+> **This is practice, not a deliverable, so don't chase perfect.** When grill-me or the spec process throws questions at you, answer the easy ones, note the rest, and keep moving; rough and partial is the point today. And you're working a **clone, nothing real changes**: Product creates brand-new practice tickets (your own project or the sandbox, never another team's), QA drafts on a branch. You can't break anything, so just play.
+
 > **Reviewing what Claude writes.** Everything lands as markdown you can open and read (Product: under `openspec/changes/<your-feature>/`, one file per piece, proposal then each spec; QA: your test-case files on your branch). In VS Code, open a file and press **Cmd+Shift+V** (Windows **Ctrl+Shift+V**) for a formatted preview, or **Cmd+K** then **V** for a side-by-side preview.
 
 <details>
@@ -25,7 +27,7 @@ Open the VS Code markdown preview, select all in the **preview** pane (Cmd+A), c
 
 ## Product room: break a feature into value-bearing Jira tickets
 
-**You leave with:** your feature broken into **real Jira tickets in your own project**: one **Epic** (the feature), a **Story per behavior** (each with its own business-value "Why"), and **sub-tasks** under each, every Story backed by a proposal and a spec a developer could build from and QA could verify.
+**You leave with:** your feature broken into a **practice ticket tree** you create from scratch, an **Epic**, a **Story per behavior** (each with its own business-value "Why"), and **sub-tasks** under each, every Story backed by a proposal and a spec a developer could build from and QA could verify. It's a clone to play with, in your own project or the sandbox, not an edit to your real backlog.
 
 The move you're learning is **divide and conquer**: explore the *whole* feature, find the natural seams *between behaviors*, and let each behavior become one well-sized, independently shippable ticket. The full method is in **[The OpenSpec Process](openspec-process.md)**: keep it open.
 
@@ -113,7 +115,7 @@ then run the `grill-me` skill on the spec and answer its questions.
 ### Step 5: Create the Jira tickets, in reviewable chunks
 *Erin's doc: [How Jira and OpenSpec connect](openspec-process.md?id=how-jira-and-openspec-connect-step-by-step).*
 
-Build the tree in **your own Jira project**, and here too go in pieces you can check: create the **Epic** from the proposal, then **one Story per spec** (its "Why" is the description), then a few **sub-tasks** per Story from the tasks list. **Make the agent show the plan first**, then read it: does every Story name a behavior and a value? Any "layer" Stories hiding? Only then say go, and spot-check in Jira after.
+Build the tree as **new practice tickets**, a clone to play with, not an update to your real ticket. Create them in **your own project** (label the Epic so it reads as practice) or the **[Mocking Project (`MP`)](https://aspenware.atlassian.net/jira/software/projects/MP/boards)** sandbox. **Don't create them in another team's project.** Go in pieces you can check: the **Epic** from the proposal, then **one Story per spec** (its "Why" is the description), then a few **sub-tasks** per Story from the tasks list. **Make the agent show the plan first**, then read it: does every Story name a behavior and a value? Any "layer" Stories hiding? Only then say go, and spot-check in Jira after.
 
 > **The review *is* the safety:** you see the tree before anything is created, and a wrong ticket is one click to delete.
 
@@ -213,14 +215,12 @@ Don't trust the first draft. Turn the agent on its own work: **what might be wro
 </details>
 
 ### Step 6: Save it to your branch
-Save the test cases to your branch and commit, reviewing the diff before it lands. Push the branch to share (open a PR later); **never push to `main`.** Optionally drop them on the Jira ticket too.
+Your branch is your safe clone, so save and commit there, reviewing the diff before it lands. Push the branch to share (open a PR later); **never push to `main`.** We're just practicing today, so leave the real Jira story alone; no need to post anything back to it.
 
 <details>
 <summary>Here's an example you can use, only if you're stuck</summary>
 
 > *"Save these as `[TICKET]-test-cases.md` in our working folder and commit them to my branch. Show me the diff first."* then review and say go.
-
-Optional: *"Post these as a comment on my ticket, show me the text first."*
 </details>
 
 ---
