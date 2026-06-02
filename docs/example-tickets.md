@@ -4,16 +4,16 @@ Four real tickets, shown here to work or paste from. **Product:** if you didn't 
 
 | Ticket | Type | Use it as | Why |
 |--------|------|-----------|-----|
-| **PUR-6243** | Bug / Purchase | ✅ **Good example to copy** | Clean Given/When/Then AC + a test-case-to-AC-to-evidence table. The gold standard for shape. |
-| **PPA-4978** | Bug / PPA | ✅ **Good QA example** | Business-rule AC + a scenario/evidence table; AC even bakes in "create an AQA test." |
-| **CHK-3334** | Story / Checkout | ✏️ **Sharpen this (Product)** | AC written as nested numbered requirements, real, but not testable as written. |
-| **PUR-6336** | Task / AI data | ✏️ **"Is this even AC?" (Product/QA)** | An implementation checklist masquerading as acceptance criteria. Great for "what's wrong with this?" |
+| **PUR-6243** | Bug / Purchase | **Good example to copy** | Clean Given/When/Then AC + a test-case-to-AC-to-evidence table. The gold standard for shape. |
+| **PPA-4978** | Bug / PPA | **Good QA example** | Business-rule AC + a scenario/evidence table; AC even bakes in "create an AQA test." |
+| **CHK-3334** | Story / Checkout | **Sharpen this (Product)** | AC written as nested numbered requirements, real, but not testable as written. |
+| **PUR-6336** | Task / AI data | **"Is this even AC?" (Product/QA)** | An implementation checklist masquerading as acceptance criteria. Great for "what's wrong with this?" |
 
 > **QA format:** your team's **[Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard)** is in Confluence; the complete **`QUAL-4510`** example comes from the session materials. Use those as the format. Other QUAL IDs referenced in these tickets (QUAL-5013, QUAL-2591) are still placeholders we don't have bodies for.
 
 ---
 
-## ✅ PUR-6243: the shape to copy (Given / When / Then)
+## PUR-6243: the shape to copy (Given / When / Then)
 
 > **AC 1, Non-fenced Cloud PDP or PCP page + valid discount voucher code**
 > - GIVEN a user navigates to a non-fenced Cloud PDP or PCP URL with a valid discount voucher code appended
@@ -27,7 +27,7 @@ Four real tickets, shown here to work or paste from. **Product:** if you didn't 
 
 It also maps each AC to a test case and to video evidence. **That mapping is the bit to copy in the QA room.**
 
-## ✅ PPA-4978: business-rule AC with testability baked in
+## PPA-4978: business-rule AC with testability baked in
 
 > 1. Move the customer-contact update to **after** the auth call.
 > 2. **Create a new AQA test case** to ensure this bug does not return.
@@ -39,7 +39,7 @@ Plus a Problem Statement, Impact Statement, Steps to Reproduce, and a scenario t
 
 ---
 
-## ✏️ CHK-3334: sharpen this (Product)
+## CHK-3334: sharpen this (Product)
 
 The AC, as written (real):
 
@@ -50,7 +50,7 @@ The AC, as written (real):
 
 **Why it's a good practice target:** it's requirement-shaped, not behavior-shaped. "Always displayed", under every state? Phone required only for FP 3DS, where's that scenario? **Explore** it with Claude and the gaps fall out; **spec** it as testable scenarios and they get answered. (The ticket's own "Testing Notes" scenario table is a hint at what the spec should cover.)
 
-## ✏️ PUR-6336: is this even AC?
+## PUR-6336: is this even AC?
 
 Its "Acceptance Criteria" is a nested implementation checklist, "add a section to the flat file," "identify what tool calls we need," "generate option-2 and option-3 flat files for these 30 product IDs." **That's a task breakdown, not acceptance criteria.** Use it to ask: *what would "done and correct" actually look like to someone verifying this?*, and rewrite it as outcomes.
 

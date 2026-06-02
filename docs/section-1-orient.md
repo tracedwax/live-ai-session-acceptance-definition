@@ -44,7 +44,7 @@ Let it answer. Then:
 
 ## Connect Jira & watch the loop (10 min)
 
-This is the demo. **Drive on a real feature; narrate as you go.** (If a connection isn't ready, drive on your own Jira.) Run the *entire* loop once so the rooms have a template: **feature → explore → grill out the gaps → split → tickets.**
+This is the demo. **Drive on a real feature; narrate as you go.** (If a connection isn't ready, drive on your own Jira.) Run the loop once so the rooms have a template: **feature → explore → grill out the gaps → split → one artifact at a time → tickets.** Model the habit out loud: **you are not one-shotting this**, you make one thing, read it, then make the next.
 
 **The reveal, Claude reads Jira for you:**
 

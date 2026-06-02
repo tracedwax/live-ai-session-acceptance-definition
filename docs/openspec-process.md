@@ -133,14 +133,14 @@ A capability is named as a **behavior** a user can observe (`order-confirmation-
 
 ## Sizing Reference
 
-🔴 **A Proposal is too big if…**
+**A Proposal is too big if…**
 - "What Changes" has more than 6 bullets
 - It touches more than 2 user roles
 - It would take more than 2 weeks end-to-end
 - Multiple engineers would work it simultaneously
 - You can't describe it without "and also"
 
-🟡 **A Proposal is well-scoped if…**
+**A Proposal is well-scoped if…**
 - Describable in one clear sentence
 - 2-4 capabilities with clear behavior names
 - One engineer can own it start to finish
@@ -167,8 +167,8 @@ A capability is named as a **behavior** a user can observe (`order-confirmation-
 
 ## Anti-Patterns to Avoid
 
-- **✗ Writing the Proposal as a longer Jira description.** If you're copy-pasting from Jira into the Proposal, stop and run Exploration first. Jira describes intent; Proposals describe scope and behavior.
-- **✗ WHEN/THEN scenarios that describe UI, not behavior.** *"WHEN the user clicks the blue button, THEN a modal appears"* is a UI description. Behavior specs survive redesigns; UI specs don't.
-- **✗ Treating the spec as a one-way handoff.** If an engineer discovers a constraint that changes a WHEN/THEN, the PM needs to know and the spec updated **before** QA. A spec that doesn't reflect reality is worse than no spec.
-- **✗ Skipping Exploration for complex features.** Technically optional, but for anything touching multiple roles, a new integration, or real edge cases, skipping it means your Proposal has gaps.
-- **✗ Splitting Proposals by technical layer.** "Frontend Proposal" + "Backend Proposal" for one feature is the wrong decomposition. Split by independently shippable behavior, things different users can observe working.
+- **Writing the Proposal as a longer Jira description.** If you're copy-pasting from Jira into the Proposal, stop and run Exploration first. Jira describes intent; Proposals describe scope and behavior.
+- **WHEN/THEN scenarios that describe UI, not behavior.** *"WHEN the user clicks the blue button, THEN a modal appears"* is a UI description. Behavior specs survive redesigns; UI specs don't.
+- **Treating the spec as a one-way handoff.** If an engineer discovers a constraint that changes a WHEN/THEN, the PM needs to know and the spec updated **before** QA. A spec that doesn't reflect reality is worse than no spec.
+- **Skipping Exploration for complex features.** Technically optional, but for anything touching multiple roles, a new integration, or real edge cases, skipping it means your Proposal has gaps.
+- **Splitting Proposals by technical layer.** "Frontend Proposal" + "Backend Proposal" for one feature is the wrong decomposition. Split by independently shippable behavior, things different users can observe working.

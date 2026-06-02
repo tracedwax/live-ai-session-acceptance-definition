@@ -17,11 +17,11 @@ This is the workspace for the **Writing Acceptance Criteria with Claude** sessio
 
 ## The examples
 
-- **`examples/PUR-6243.md`**: ✅ copy this shape (clean Given/When/Then + test mapping)
-- **`examples/PPA-4978.md`**: ✅ good QA example (AC + test scenarios)
-- **`examples/QUAL-4510.md`**: ✅ a real test case in our exact format (QA: copy this)
-- **`examples/CHK-3334.md`**: ✏️ a Product story to sharpen
-- **`examples/PUR-6336.md`**: ✏️ "is this even AC?" practice
+- **`examples/PUR-6243.md`**: copy this shape (clean Given/When/Then + test mapping)
+- **`examples/PPA-4978.md`**: good QA example (AC + test scenarios)
+- **`examples/QUAL-4510.md`**: a real test case in our exact format (QA: copy this)
+- **`examples/CHK-3334.md`**: a Product story to sharpen
+- **`examples/PUR-6336.md`**: "is this even AC?" practice
 
 ## The loop
 

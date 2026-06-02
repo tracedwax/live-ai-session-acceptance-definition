@@ -19,7 +19,7 @@ Example: *"Validates that an unauthenticated user is blocked from the order hist
 
 ## 3. Test Case Reporting Fields: All Required
 
-> ⚠️ Every test case must have **all** of these fields filled out before it leaves In Progress.
+> Every test case must have **all** of these fields filled out before it leaves In Progress.
 
 | Field | Notes |
 |-------|-------|
