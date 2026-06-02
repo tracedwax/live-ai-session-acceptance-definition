@@ -1,6 +1,6 @@
 # Example Tickets
 
-Four real tickets, shown here to work or paste from. **Product:** if you didn't bring a feature, the rough ones (**CHK-3334**, **PUR-6336**) are raw material to **explore, split, and turn into a ticket tree**: the kind of vague work OpenSpec is built for. (Don't have a feature big enough to split? Treat the whole **guest-checkout** example in [The OpenSpec Process](openspec-process.md) as your feature.) **QA:** **PUR-6243** and **QUAL-4510** are the format to copy. The two clean examples (**PUR-6243**, **PPA-4978**) also show what "clear, testable behavior" looks like.
+Four real tickets, here as **illustrations of strong vs weak acceptance criteria**, not work for the session. You bring your own ticket; skim these only to calibrate what "clear, testable behavior" looks like. **PUR-6243** and **PPA-4978** are clean; **CHK-3334** and **PUR-6336** are the messy kind OpenSpec is built to sharpen.
 
 | Ticket | Type | Use it as | Why |
 |--------|------|-----------|-----|
@@ -64,7 +64,7 @@ Drop the ticket into Claude and run your room's flow ([Section 2](section-2-brea
 <summary>Here's an example you can use, only if you're stuck</summary>
 
 **Product:**
-> *"Let's use OpenSpec. Explore this whole feature with me before we write or split anything, [paste CHK-3334, or your own]. What are all the distinct behaviors here? Ask me one thing at a time."* then `grill me`, then *"Split this into independently shippable behaviors, each with a one-line 'Why', then build the Epic + Stories + sub-tasks in my Jira project. Show me the tree first."*
+> *"Let's use OpenSpec. Explore this whole feature with me before we write or split anything, [paste your ticket]. What are all the distinct behaviors here? Ask me one thing at a time."* then run the `grill-me` skill, then *"Split this into independently shippable behaviors, each with a one-line 'Why', then build the Epic + Stories + sub-tasks in my Jira project. Show me the tree first."*
 
 **QA:**
 > *"Follow our Test Case Standard at https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard and match the format of the `QUAL-4510` example. Draft test cases for this story: Action / Data / Expected Result, definitive language, negative path inline. If test cases already exist, normalize them to the standard and flag duplicates."*

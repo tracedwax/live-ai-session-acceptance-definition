@@ -32,7 +32,7 @@
 **QA cues it's landing:** people stop reading the prompt page and start typing their own follow-ups; someone says "it caught the regression I'd have missed."
 **Fallback if stuck (by ~10 min in):** *"Don't write tickets yet. Dump everything, let `grill me` find the holes, then split by behavior. The tickets come last."*
 **Risks:**
-- *Someone has no feature.* Mitigation: hand them [CHK-3334](example-tickets.md) (or treat the whole guest-checkout example as the feature) and have them split + spec it.
+- *Someone has no feature.* Mitigation: point them at the guest-checkout example in [the process doc](openspec-process.md), or any small feature, and have them split + spec it.
 - *OpenSpec / install friction (Product).* Mitigation: have Claude install it (`npm i -g @fission-ai/openspec`) in their own folder; never burn more than ~2 min, circle back.
 - *They split by technical layer ("frontend/backend").* Mitigation: **the** correction to make, *"a layer ships nothing on its own. Split by what a user can see work."* Catch it every time.
 - *They treat Explore as "give me the answer fast."* Mitigation: *"This phase is for thinking. Let `grill me` ask the awkward questions, that's where the tickets get complete."*

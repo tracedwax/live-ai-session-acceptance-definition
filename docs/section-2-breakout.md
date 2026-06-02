@@ -9,7 +9,9 @@ Two rooms, two different jobs:
 
 Pick your room. **Each step tells you what to accomplish and why, not what to type.** Talking to the agent in your own words *is* the skill we're here to build, so try that first. Stuck for words? Every step has a **click-to-open example prompt** you can borrow. The examples are a safety net, not the path.
 
-> **Go one step at a time. We are deliberately not one-shotting this.** Make one artifact, read it, grill it, ask Claude and ask the room, *then* move to the next. Judge each piece as it comes; don't collect a finished doc you never looked at. If the agent races ahead, tell it to slow down and do one thing.
+> **Review before anything ships, and ask Claude and the room as you go.** **Product: don't one-shot it.** Make one artifact (the proposal, then each spec), read it, grill it, then the next; if the agent races ahead, tell it to slow down. **QA: a one-shot draft is fine**, then critique it hard and improve. Either way, judge each piece; don't collect a doc you never looked at.
+
+> **Everyone hands on keys, please. :)** This part isn't TV. Do it on your own ticket as we go and keep your screen shared, we're all working at once, not watching one person.
 
 ---
 
@@ -52,8 +54,7 @@ Then let **`grill me`** find the holes. You don't need to know the right questio
 
 > *"Let's use OpenSpec. Explore this whole feature with me before we write or split anything. Here's everything I have: [paste your feature, notes, refinement call, Slack thread]. What are all the distinct behaviors this touches? What's ambiguous? Ask me one thing at a time."*
 
-then:
-> *"`grill me` on this feature, one question at a time, what's unspecced, what would a developer still have to guess?"*
+then run the `grill-me` skill on the feature and answer its questions.
 </details>
 
 ### Step 2: Find the seams (divide it up)
@@ -75,7 +76,7 @@ Don't generate everything at once. Have the agent draft **just the proposal**, t
 
 > *"Draft just the OpenSpec proposal for this feature, the what and why, as `proposal.md`. Don't write specs, design, or tasks yet, I want to review the proposal first."*
 
-then: *"`grill me` on this proposal, one question at a time, scope, the 'Why', and anything I haven't decided."*
+then run the `grill-me` skill on the proposal and answer its questions.
 </details>
 
 ### Step 4: Write the specs one behavior at a time
@@ -88,7 +89,7 @@ Now go behavior by behavior. For **each** one, have the agent write **that singl
 
 > *"Write the spec for just the `[behavior]` capability as testable WHEN/THEN scenarios. Stop after this one so I can review it before the next."*
 
-then: *"`grill me` on this one spec, one question at a time, the unhappy paths and anything a developer would still guess."*
+then run the `grill-me` skill on the spec and answer its questions.
 </details>
 
 ### Step 5: Create the Jira tickets, in reviewable chunks
@@ -118,6 +119,8 @@ Finished early? Push the specs further, negative paths, rollback behavior, the n
 **You leave with:** test cases that follow your team's **Test Case Standard**: Action / Data / Expected Result, definitive language, mapped to the AC, saved into **`qa-shared-tools`** on your branch. And a shared **`write-test-cases` skill** committed back, so your whole team drafts to the same bar next time.
 
 Your team already writes test cases with Claude. So the win here isn't "can it draft one", it's **standardizing the bar and cleaning up what already exists.**
+
+> **What good looks like:** four real test cases to reference for shape, [QUAL-4510](https://aspenware.atlassian.net/browse/QUAL-4510), [QUAL-4207](https://aspenware.atlassian.net/browse/QUAL-4207), [QUAL-1380](https://aspenware.atlassian.net/browse/QUAL-1380), [QUAL-4961](https://aspenware.atlassian.net/browse/QUAL-4961).
 
 ### Step 1: Open your clone of the shared repo
 You already have **`qa-shared-tools`** (Azure DevOps) cloned, that's where you'll save your work. Open it in VS Code, make a branch so nothing touches `main` (or just ask Claude to make the branch), and start Claude there. Your bar is the team's **[Test Case Standard](https://aspenware.atlassian.net/wiki/spaces/QA/pages/4137582614/Test+Case+Standard)** in Confluence.
@@ -153,7 +156,9 @@ You brought a ticket and you have the Jira MCP, so pull it straight in. Have the
 <details>
 <summary>Here's an example you can use, only if you're stuck</summary>
 
-> *"Pull ticket [your ticket key] from Jira. Read its acceptance criteria and testing notes. Don't write anything yet."*
+> *"Pull my ticket from Jira. Read its acceptance criteria and testing notes. Don't write anything yet."*
+
+(No Jira MCP yet? Paste the ticket text instead.)
 </details>
 
 ### Step 3: Grill yourself on what it takes to test this
@@ -162,7 +167,7 @@ Before a single test case gets written, use **`grill me`** to draw out what you 
 <details>
 <summary>Here's an example you can use, only if you're stuck</summary>
 
-> *"`grill me` on what it takes to test this story, one question at a time: the data and accounts I'd need, the preconditions, the environment, the edge cases, and what 'done and correct' looks like. Don't write test cases yet."*
+Run the `grill-me` skill to surface what it takes to test this story, and answer its questions before writing anything.
 </details>
 
 ### Step 4: Draft to the team's bar
@@ -184,7 +189,7 @@ Don't trust the first draft. Turn the agent on its own work: **what might be wro
 <details>
 <summary>Here's an example you can use, only if you're stuck</summary>
 
-> *"Critique these test cases as if you're reviewing them against our standard: what's untestable, what's missing, what's duplicated, where does an expected result say 'should'? Then `grill me` on the gaps one at a time, and we'll improve them together."*
+> *"Critique these test cases against our standard, what's untestable, missing, or duplicated."* Then run the `grill-me` skill on the gaps and improve them.
 </details>
 
 ### Step 6: Save it to your branch

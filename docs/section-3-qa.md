@@ -19,7 +19,7 @@ Anything from the session. Likely ones, with the short answer:
 
 - **"When do I trust it to create tickets?"**: When you've read the tree and you'd have drawn something close to it yourself. The review *is* the safety, and a wrong ticket is one click to delete.
 - **"How small should a Story be?"**: One behavior a user can observe; one sentence to describe; if a spec needs >6-8 scenarios, split it.
-- **"What if I don't have a good example to paste?"**: Use the [example tickets](example-tickets.md). PUR-6243 is the one to copy for shape.
+- **"What if I don't have a good example of what good looks like?"**: QA has the four reference test cases linked in the breakout; Product has the worked example in the process doc.
 - **"Is this just for features?"**: No. Same loop works for a single story, a test plan, a release note. A feature is just today's rep.
 - **"CLAUDE.md vs. a skill, which?"**: A `CLAUDE.md` is a preference Claude always loads in that folder. A skill is the packaged, one-command version you can reuse anywhere. Start with the preference; graduate to the skill.
 

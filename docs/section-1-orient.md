@@ -16,11 +16,13 @@ The only goal of this first part is that when we split into rooms, nobody is sta
 
 ## Welcome & level-set (5 min)
 
-Quick and warm. Then one question in chat, **two people answer aloud:**
+Quick and warm. Round-robin, each person answers two things:
 
-> *"In one line: how have you used Claude so far, even once? What did you ask it?"*
+> *"What did you do with AI this past week? And which ticket did you bring today?"*
 
-This tells you the room's real starting point and gets voices in early. No wrong answers; "I haven't really" is a fine answer.
+This gets voices in early and surfaces where the room is starting from. "I haven't really" is a fine answer to the first.
+
+**Confirm everyone brought a ticket, and have them pull it up in Jira right now.** That's what they'll work in the breakout. Anyone without one, flag it to a facilitator.
 
 Then name the win out loud:
 
@@ -48,7 +50,7 @@ This is the demo. **Drive on a real feature; narrate as you go.** (If a connecti
 
 **The reveal, Claude reads Jira for you:**
 
-> *"Pull [CHK-3334] from Jira and summarize what it's asking for."*
+> *"Pull my ticket from Jira and summarize what it's asking for."*
 
 When it comes back, name it (gently):
 
@@ -57,7 +59,7 @@ When it comes back, name it (gently):
 **Then the loop, narrated:**
 
 1. **Dump everything, explore the whole feature.** *"Here's the feature, plus my rough notes and what we said in refinement. Explore it with me before we write or split anything, what are all the distinct behaviors here? Don't write yet."* (Or just `/opsx:explore`.)
-2. **Let `grill me` find what's missing, this is the moment to land.** *"`grill me` on this feature, one question at a time. What's ambiguous, what's unspecced, what would a developer still have to guess?"* Answer 2-3 questions live. Then name it:
+2. **Let the `grill-me` skill find what's missing.** Run it on the feature and answer 2-3 questions live. Then name it:
    > **The point:** *"I didn't have to know the right questions. `grill me` found the holes for me, and every answer is a decision that belongs in the ticket. That's how the ticket gets complete before anyone writes code."*
 3. **Split by behavior.** *"Now split this into independently shippable behaviors, one bucket each, named like a behavior, with a one-line 'Why' (the business value)."* Say out loud: *"Not a frontend ticket and a backend ticket, those have no value on their own. We split by what a user can see work."*
 4. **Propose.** `/opsx:propose`, Claude writes the proposal + a spec per behavior. Point at the files appearing under `openspec/changes/`.
@@ -65,7 +67,7 @@ When it comes back, name it (gently):
 
 Then close the demo with the honest line:
 
-> "I turned one fuzzy feature into a clean set of tickets that each deliver something, and `grill me` did the work of finding what I'd have missed. The thinking was still mine; it just stopped me from shipping vague. That's the whole session. Now you do it on yours."
+> "I turned one fuzzy feature into a clean set of tickets that each deliver something, and `grill me` did the work of finding what I'd have missed. The thinking was still mine; it just stopped me from shipping vague. Now you do it on yours."
 
 > **Autosave aside (10 seconds):** point out that Claude's been making tiny git commits after each step. *"That's autosave, you never touch git. It's just an undo trail."*
 
