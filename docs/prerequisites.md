@@ -27,7 +27,7 @@ You'll **create real tickets in your own Jira project** live, so your Jira conne
 - If a drop-in already connected your Jira, you're set.
 - If not, **come to a drop-in before June 2** or flag it in the channel. A facilitator can also drive the demo on their own Jira so you still see the whole loop.
 
-> **Jira is configured once, globally.** You don't reconfigure it per project, just ask Claude to set the Atlassian (Jira) MCP up globally and follow its instructions.
+> **Jira is configured once, globally.** You don't reconfigure it per project. If you already set it up in another repo, ask Claude to **move the MCP config to your global setup** so it works in every folder. Starting fresh? Just ask Claude to walk you through MCP setup and follow its instructions.
 
 > **Writing to Jira is always confirm-first:** Claude shows you the whole ticket tree **as a plan**, then you say go. Nothing gets created until you approve it.
 
